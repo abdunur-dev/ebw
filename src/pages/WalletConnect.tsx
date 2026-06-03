@@ -110,7 +110,7 @@ const WalletConnect: React.FC = () => {
               <div className="w-8 h-8 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center">
                 <span className="text-primary font-bold text-sm">E</span>
               </div>
-              <span className="text-lg font-bold text-foreground text-glow-blue">
+              <span className="text-lg font-bold text-foreground text-glow-gold">
                 EBW
               </span>
             </div>
@@ -165,7 +165,7 @@ const WalletConnect: React.FC = () => {
 
             {/* Official Wallet Button as fallback */}
             <div className="flex justify-center mb-8">
-              <WalletMultiButton className="!bg-primary !text-white !font-bold !rounded-xl !h-12 !px-8 hover:!bg-primary/90 transition-all shadow-[0_0_20px_-5px_rgba(0,180,216,0.3)]" />
+              <WalletMultiButton className="!bg-primary !text-white !font-bold !rounded-xl !h-12 !px-8 hover:!bg-primary/90 transition-all shadow-[0_0_20px_-5px_rgba(244,196,0,0.3)]" />
             </div>
 
             <div className="relative mb-6">

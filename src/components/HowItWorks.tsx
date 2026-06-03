@@ -81,7 +81,7 @@ const HowItWorks: React.FC = () => {
                   </div>
                 </div>
 
-                <h3 className="text-lg font-semibold text-foreground mb-2 transition-colors group-hover:text-gradient-blue">
+                <h3 className="text-lg font-semibold text-foreground mb-2 transition-colors group-hover:text-gradient-gold">
                   {step.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">

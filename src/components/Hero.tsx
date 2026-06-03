@@ -84,7 +84,7 @@ const Hero: React.FC = () => {
                 <span className="text-shimmer">.</span>
               </h1>
               <p className="mt-3 text-xl sm:text-2xl lg:text-3xl font-semibold">
-                <span className="typing-cursor text-gradient-blue">
+                <span className="typing-cursor text-gradient-gold">
                   {displayText}
                 </span>
               </p>

@@ -23,8 +23,7 @@ export default {
         body: ['DM Sans', 'sans-serif'],
       },
       colors: {
-        orange: { DEFAULT: '#FF5500', light: '#FF6B00', dark: '#E04A00' },
-        dark: { DEFAULT: '#0D0D0D', 1: '#111111', 2: '#161616', 3: '#1C1C1C', 4: '#242424' },
+        dark: { DEFAULT: '#001B4D', 1: '#00215C', 2: '#002568', 3: '#002A75', 4: '#003088' },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -69,13 +68,13 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         neon: {
-          blue: "hsl(195 100% 45%)",
-          gold: "hsl(42 90% 55%)",
+          gold: "hsl(48 100% 48%)",
+          amber: "hsl(48 100% 50%)",
         },
         ebw: {
-          blue: '#00B4D8',
-          navy: '#021737',
-          gold: '#F0A500',
+          gold: '#F4C400',
+          amber: '#FFD700',
+          navy: '#001B4D',
         }
       },
       borderRadius: {

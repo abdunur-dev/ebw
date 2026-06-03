@@ -29,7 +29,7 @@ const AgentHeader: React.FC<AgentHeaderProps> = ({ onToggleSidebar }) => {
           onClick={() => navigate("/")}
           className="flex items-center gap-2"
         >
-          <div className="w-7 h-7 bg-ebw-blue rounded-lg flex items-center justify-center font-display font-extrabold text-white text-xs">S</div>
+          <div className="w-7 h-7 bg-ebw-gold rounded-lg flex items-center justify-center font-display         font-extrabold text-white text-xs">E</div>
           <span className="text-sm font-bold text-foreground font-display tracking-[0.05em] hidden sm:inline">
             EBW
           </span>

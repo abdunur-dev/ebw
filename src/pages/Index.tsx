@@ -86,12 +86,12 @@ const Index: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#0d0d0d] min-h-screen text-white font-body selection:bg-ebw-blue/30">
+    <div className="bg-[#001B4D] min-h-screen text-white font-body selection:bg-ebw-gold/30">
       
       {/* NAV (sticky, outside hero) */}
       <nav className="site-nav">
         <a className="nav-logo no-underline">
-          <div className="w-8 h-8 bg-ebw-blue rounded-lg flex items-center justify-center font-display font-extrabold text-white text-xl">E</div>
+          <div className="w-8 h-8 bg-ebw-gold rounded-lg flex items-center justify-center font-display font-extrabold text-white text-xl">E</div>
           <span className="font-display font-extrabold tracking-[0.05em] uppercase">EBW</span>
         </a>
         <div className="nav-links">
@@ -105,14 +105,14 @@ const Index: React.FC = () => {
       {/* ════════════ HERO ════════════ */}
       <section className="hero">
         <div className="absolute inset-0 bg-pixel-grid-animated opacity-30 pointer-events-none" />
-        <div className="absolute top-20 left-[8%] w-16 h-16 border border-ebw-blue/20 rotate-45 animate-float-slow" />
-        <div className="absolute top-40 right-[12%] w-24 h-24 border border-ebw-blue/15 rotate-12 animate-float-medium" />
-        <div className="absolute bottom-32 left-[18%] w-12 h-12 bg-ebw-blue/10 rotate-45 animate-float-slow" style={{ animationDelay: "2s" }} />
-        <div className="absolute top-1/4 left-[4%] w-20 h-20 border-2 border-ebw-blue/10 rotate-[30deg] animate-float-medium" style={{ animationDelay: "1s" }} />
-        <div className="absolute bottom-1/4 right-[6%] w-14 h-14 bg-ebw-blue/8 rotate-[60deg] animate-float-slow" style={{ animationDelay: "3s" }} />
-        <div className="absolute top-[60%] left-[55%] w-10 h-10 border border-ebw-blue/20 rotate-[20deg] animate-float-medium" style={{ animationDelay: "1.5s" }} />
-        <div className="absolute top-[12%] left-[42%] w-8 h-8 bg-ebw-blue/15 rotate-45 animate-float-slow" style={{ animationDelay: "0.5s" }} />
-        <div className="absolute bottom-[15%] right-[28%] w-16 h-16 border border-ebw-blue/10 rotate-[75deg] animate-float-medium" style={{ animationDelay: "2.5s" }} />
+        <div className="absolute top-20 left-[8%] w-16 h-16 border border-ebw-gold/20 rotate-45 animate-float-slow" />
+        <div className="absolute top-40 right-[12%] w-24 h-24 border border-ebw-gold/15 rotate-12 animate-float-medium" />
+        <div className="absolute bottom-32 left-[18%] w-12 h-12 bg-ebw-gold/10 rotate-45 animate-float-slow" style={{ animationDelay: "2s" }} />
+        <div className="absolute top-1/4 left-[4%] w-20 h-20 border-2 border-ebw-gold/10 rotate-[30deg] animate-float-medium" style={{ animationDelay: "1s" }} />
+        <div className="absolute bottom-1/4 right-[6%] w-14 h-14 bg-ebw-gold/8 rotate-[60deg] animate-float-slow" style={{ animationDelay: "3s" }} />
+        <div className="absolute top-[60%] left-[55%] w-10 h-10 border border-ebw-gold/20 rotate-[20deg] animate-float-medium" style={{ animationDelay: "1.5s" }} />
+        <div className="absolute top-[12%] left-[42%] w-8 h-8 bg-ebw-gold/15 rotate-45 animate-float-slow" style={{ animationDelay: "0.5s" }} />
+        <div className="absolute bottom-[15%] right-[28%] w-16 h-16 border border-ebw-gold/10 rotate-[75deg] animate-float-medium" style={{ animationDelay: "2.5s" }} />
 
         {/* Hero Content */}
         <div className="relative z-10 flex-1 flex flex-col lg:flex-row items-center justify-center px-6 sm:px-10 lg:px-[72px] gap-8 lg:gap-12">
@@ -127,8 +127,8 @@ const Index: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-ebw-blue/10 border border-ebw-blue/20 text-ebw-blue text-xs font-semibold mb-6">
-                <div className="w-1.5 h-1.5 rounded-full bg-ebw-blue animate-pulse"></div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-ebw-gold/10 border border-ebw-gold/20 text-ebw-gold text-xs font-semibold mb-6">
+                <div className="w-1.5 h-1.5 rounded-full bg-ebw-gold animate-pulse"></div>
                 Ethiopian Blockchain Week 2026
               </div>
             </motion.div>
@@ -139,7 +139,7 @@ const Index: React.FC = () => {
               className="font-display font-bold leading-[1.08] tracking-[-0.025em] mb-6" 
               style={{ fontSize: 'clamp(2.2rem, 5vw, 4.8rem)' }}
             >
-              Inclusive Innovation<br/><span className="text-ebw-blue">for Every Ethiopian</span>
+              Inclusive Innovation<br/><span className="text-ebw-gold">for Every Ethiopian</span>
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -147,7 +147,7 @@ const Index: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="text-lg sm:text-xl mb-3 font-semibold"
             >
-              <span className="typing-cursor text-gradient-blue">{displayText}</span>
+              <span className="typing-cursor text-gradient-gold">{displayText}</span>
             </motion.p>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -185,7 +185,7 @@ const Index: React.FC = () => {
                 <div className="text-white/40 text-[10px] sm:text-xs uppercase tracking-widest mt-1">Speakers</div>
               </div>
               <div>
-                <div className="text-xl sm:text-2xl font-bold font-display text-ebw-blue">2</div>
+                <div className="text-xl sm:text-2xl font-bold font-display text-ebw-gold">2</div>
                 <div className="text-white/40 text-[10px] sm:text-xs uppercase tracking-widest mt-1">Days</div>
               </div>
             </motion.div>
@@ -201,11 +201,11 @@ const Index: React.FC = () => {
             <div className="chat-window flex flex-col">
               <div className="flex items-center justify-between mb-6 pb-4 border-b border-white/5">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-ebw-blue rounded-full flex items-center justify-center font-bold">E</div>
+                  <div className="w-10 h-10 bg-ebw-gold rounded-full flex items-center justify-center font-bold">E</div>
                   <div>
                     <div className="text-sm font-bold">EBW</div>
-                    <div className="text-[10px] text-ebw-blue flex items-center gap-1">
-                      <div className="w-1 h-1 rounded-full bg-ebw-blue"></div>
+                    <div className="text-[10px] text-ebw-gold flex items-center gap-1">
+                      <div className="w-1 h-1 rounded-full bg-ebw-gold"></div>
                       Online
                     </div>
                   </div>
@@ -226,11 +226,11 @@ const Index: React.FC = () => {
                         className="flex items-center gap-2 px-4 py-3 shrink-0"
                       >
                         <div className="flex gap-1">
-                          <span className="w-2 h-2 rounded-full bg-ebw-blue/40 animate-bounce" style={{ animationDelay: "0ms" }} />
-                          <span className="w-2 h-2 rounded-full bg-ebw-blue/40 animate-bounce" style={{ animationDelay: "150ms" }} />
-                          <span className="w-2 h-2 rounded-full bg-ebw-blue/40 animate-bounce" style={{ animationDelay: "300ms" }} />
+                          <span className="w-2 h-2 rounded-full bg-ebw-gold/40 animate-bounce" style={{ animationDelay: "0ms" }} />
+                          <span className="w-2 h-2 rounded-full bg-ebw-gold/40 animate-bounce" style={{ animationDelay: "150ms" }} />
+                          <span className="w-2 h-2 rounded-full bg-ebw-gold/40 animate-bounce" style={{ animationDelay: "300ms" }} />
                         </div>
-                        <span className="text-[11px] text-ebw-blue/60 font-mono">EBW is thinking...</span>
+                        <span className="text-[11px] text-ebw-gold/60 font-mono">EBW is thinking...</span>
                       </motion.div>
                     ) : (
                       <motion.div
@@ -252,7 +252,7 @@ const Index: React.FC = () => {
               <div className="mt-8 relative">
                 <div className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white/30 text-sm flex items-center justify-between">
                   Type a command...
-                  <div className="w-5 h-5 bg-ebw-blue rounded flex items-center justify-center">
+                  <div className="w-5 h-5 bg-ebw-gold rounded flex items-center justify-center">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="3"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                   </div>
                 </div>
@@ -318,8 +318,8 @@ const Index: React.FC = () => {
 
       {/* ════════════ HOW IT WORKS ════════════ */}
       <section id="how-it-works" className="py-24 sm:py-32 px-6 sm:px-10 lg:px-[72px] relative overflow-hidden bg-ebw-mesh-dark">
-        <div className="absolute top-1/2 right-0 w-[40%] h-[60%] bg-ebw-blue/5 blur-[120px] rounded-full pointer-events-none animate-float-slow"></div>
-        <div className="absolute -left-32 bottom-0 w-64 h-64 bg-ebw-blue/[0.03] rounded-full blur-[100px] pointer-events-none animate-float-medium"></div>
+        <div className="absolute top-1/2 right-0 w-[40%] h-[60%] bg-ebw-gold/5 blur-[120px] rounded-full pointer-events-none animate-float-slow"></div>
+        <div className="absolute -left-32 bottom-0 w-64 h-64 bg-ebw-gold/[0.03] rounded-full blur-[100px] pointer-events-none animate-float-medium"></div>
         <div className="max-w-[1200px] mx-auto">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
@@ -328,7 +328,7 @@ const Index: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="mb-16 sm:mb-20"
           >
-            <div className="text-ebw-blue font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Simple by Design</div>
+            <div className="text-ebw-gold font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Simple by Design</div>
             <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl">How It Works</h2>
           </motion.div>
           
@@ -346,7 +346,7 @@ const Index: React.FC = () => {
                 transition={{ duration: 0.6, delay: i * 0.15 }}
                 className="group text-center md:text-left"
               >
-                <div className="text-5xl sm:text-6xl font-display font-black text-white/5 mb-6 group-hover:text-ebw-blue/10 transition-colors">{step.num}</div>
+                <div className="text-5xl sm:text-6xl font-display font-black text-white/5 mb-6 group-hover:text-ebw-gold/10 transition-colors">{step.num}</div>
                 <h4 className="text-lg sm:text-xl font-bold mb-4">{step.title}</h4>
                 <p className="text-white/50 leading-relaxed text-sm sm:text-base">{step.desc}</p>
               </motion.div>
@@ -366,7 +366,7 @@ const Index: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16 sm:mb-20"
           >
-            <div className="text-ebw-blue font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Highlights</div>
+            <div className="text-ebw-gold font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Highlights</div>
             <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mb-6">Conference Highlights</h2>
             <p className="text-white/40 max-w-[600px] mx-auto text-base sm:text-lg">Two days of world-class content, connections, and collaboration at Ethiopia's premier blockchain event.</p>
           </motion.div>
@@ -390,7 +390,7 @@ const Index: React.FC = () => {
                 transition={{ duration: 0.5, delay: i * 0.06 }}
                 className="feat-card"
               >
-                <div className="inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider mb-6 bg-ebw-blue/10 text-ebw-blue">
+                <div className="inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider mb-6 bg-ebw-gold/10 text-ebw-gold">
                   {feat.tag}
                 </div>
                 <h4 className="text-lg font-bold mb-3">{feat.title}</h4>
@@ -412,7 +412,7 @@ const Index: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <div className="text-ebw-blue font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Compare</div>
+            <div className="text-ebw-gold font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Compare</div>
             <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mb-6">Why EBW 2026?</h2>
             <p className="text-white/40 text-base sm:text-lg">Compare traditional conferences with EBW 2026's innovative approach to blockchain events.</p>
           </motion.div>
@@ -470,7 +470,7 @@ const Index: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16 sm:mb-24"
           >
-            <div className="text-ebw-blue font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Timeline</div>
+            <div className="text-ebw-gold font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Timeline</div>
             <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl">Event Schedule</h2>
           </motion.div>
           
@@ -494,7 +494,7 @@ const Index: React.FC = () => {
                   <div className="flex-1 text-center md:text-right md:px-12">
                     {i % 2 === 0 ? (
                       <>
-                        <div className="text-ebw-blue font-bold mb-1">{milestone.phase}</div>
+                        <div className="text-ebw-gold font-bold mb-1">{milestone.phase}</div>
                         <h4 className="text-lg sm:text-xl font-bold mb-4">{milestone.title}</h4>
                         <div className="text-white/30 text-sm font-display">{milestone.date}</div>
                       </>
@@ -512,7 +512,7 @@ const Index: React.FC = () => {
                   <div className="flex-1 text-center md:text-left md:px-12">
                     {i % 2 !== 0 ? (
                       <>
-                        <div className="text-ebw-blue font-bold mb-1">{milestone.phase}</div>
+                        <div className="text-ebw-gold font-bold mb-1">{milestone.phase}</div>
                         <h4 className="text-lg sm:text-xl font-bold mb-4">{milestone.title}</h4>
                         <div className="text-white/30 text-sm font-display">{milestone.date}</div>
                       </>
@@ -521,7 +521,7 @@ const Index: React.FC = () => {
                         {milestone.items.map((item, j) => (
                           <div key={j} className="text-white/50 text-sm">{item}</div>
                         ))}
-                        {milestone.status && <div className="inline-block px-2 py-0.5 bg-ebw-blue/10 text-ebw-blue text-[10px] font-bold rounded mt-2 uppercase">{milestone.status}</div>}
+                        {milestone.status && <div className="inline-block px-2 py-0.5 bg-ebw-gold/10 text-ebw-gold text-[10px] font-bold rounded mt-2 uppercase">{milestone.status}</div>}
                       </div>
                     )}
                   </div>
@@ -537,7 +537,7 @@ const Index: React.FC = () => {
         <div className="absolute inset-0 bg-pixel-grid opacity-20 pointer-events-none" />
         <div className="max-w-[1000px] mx-auto relative z-10">
           <div className="mb-12 sm:mb-16 text-center">
-            <div className="text-ebw-blue font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Support</div>
+            <div className="text-ebw-gold font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Support</div>
             <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mb-6">Frequently Asked Questions</h2>
             <p className="text-white/40 text-base sm:text-lg max-w-lg mx-auto">Everything you need to know about EBW 2026.</p>
           </div>
@@ -550,15 +550,15 @@ const Index: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="group bg-white/[0.03] border border-white/5 rounded-xl p-6 hover:bg-white/[0.06] hover:border-ebw-blue/20 transition-all duration-300 cursor-pointer"
+                className="group bg-white/[0.03] border border-white/5 rounded-xl p-6 hover:bg-white/[0.06] hover:border-ebw-gold/20 transition-all duration-300 cursor-pointer"
                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
               >
                 <div className="flex items-start justify-between gap-4">
-                  <h3 className={`font-semibold text-sm sm:text-base transition-colors duration-300 ${openFaq === i ? 'text-ebw-blue' : 'text-white/80 group-hover:text-white'}`}>
+                  <h3 className={`font-semibold text-sm sm:text-base transition-colors duration-300 ${openFaq === i ? 'text-ebw-gold' : 'text-white/80 group-hover:text-white'}`}>
                     {faq.q}
                   </h3>
-                  <div className={`w-6 h-6 rounded-full border shrink-0 flex items-center justify-center transition-all duration-300 ${openFaq === i ? 'bg-ebw-blue/20 border-ebw-blue/40 rotate-45' : 'border-white/10 group-hover:border-white/20'}`}>
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className={openFaq === i ? 'text-ebw-blue' : 'text-white/30'}>
+                  <div className={`w-6 h-6 rounded-full border shrink-0 flex items-center justify-center transition-all duration-300 ${openFaq === i ? 'bg-ebw-gold/20 border-ebw-gold/40 rotate-45' : 'border-white/10 group-hover:border-white/20'}`}>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className={openFaq === i ? 'text-ebw-gold' : 'text-white/30'}>
                       <path d="M12 5v14M5 12h14"/>
                     </svg>
                   </div>
@@ -633,11 +633,11 @@ const Index: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between gap-10 sm:gap-12 mb-16 sm:mb-20">
             <div className="max-w-[300px]">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-8 h-8 bg-ebw-blue rounded-lg flex items-center justify-center font-display font-extrabold text-white">E</div>
+                <div className="w-8 h-8 bg-ebw-gold rounded-lg flex items-center justify-center font-display font-extrabold text-white">E</div>
                 <span className="font-display font-extrabold text-xl tracking-[0.05em] uppercase">EBW</span>
               </div>
               <p className="text-white/40 text-sm leading-relaxed mb-8">Ethiopian Blockchain Week 2026. Inclusive innovation for every Ethiopian. July 31 - August 1, Addis Ababa.</p>
-              <a href="https://github.com/abdunur-dev/ebw-2026" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-white/40 hover:text-ebw-blue transition-colors text-sm">
+              <a href="https://github.com/abdunur-dev/ebw-2026" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-white/40 hover:text-ebw-gold transition-colors text-sm">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                 <span className="text-xs">GitHub</span>
               </a>
@@ -645,7 +645,7 @@ const Index: React.FC = () => {
             
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-12">
               <div>
-                <h5 className="font-bold text-xs uppercase tracking-widest mb-6 text-ebw-blue">Platform</h5>
+                <h5 className="font-bold text-xs uppercase tracking-widest mb-6 text-ebw-gold">Platform</h5>
                 <ul className="space-y-4 text-sm text-white/40">
                   <li onClick={handleLaunch} className="hover:text-white cursor-pointer transition-colors">Register Now</li>
                   <li className="hover:text-white cursor-pointer transition-colors">How it Works</li>
@@ -653,7 +653,7 @@ const Index: React.FC = () => {
                 </ul>
               </div>
               <div>
-                <h5 className="font-bold text-xs uppercase tracking-widest mb-6 text-ebw-blue">Community</h5>
+                <h5 className="font-bold text-xs uppercase tracking-widest mb-6 text-ebw-gold">Community</h5>
                 <ul className="space-y-4 text-sm text-white/40">
                   <li className="hover:text-white cursor-pointer transition-colors">X / Twitter</li>
                   <li className="hover:text-white cursor-pointer transition-colors">Discord</li>
@@ -672,7 +672,7 @@ const Index: React.FC = () => {
           
           <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/5 gap-6">
             <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.3em] text-white/20">
-              Forged with <span className="text-ebw-blue">❤</span> & code
+              Forged with <span className="text-ebw-gold">❤</span> & code
             </div>
             <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.3em] text-white/20">
               Addis Ababa, Ethiopia
