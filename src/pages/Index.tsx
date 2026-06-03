@@ -630,9 +630,9 @@ const Index: React.FC = () => {
       </section>
 
       {/* ════════════ FOOTER ════════════ */}
-      <footer className="footer-section py-16 sm:py-20 px-6 sm:px-10 lg:px-[72px]">
+      <footer className="footer-section py-10 sm:py-12 px-6 sm:px-10 lg:px-[72px]">
         <div className="max-w-[1200px] mx-auto">
-          <div className="flex flex-col md:flex-row justify-between gap-10 sm:gap-12 mb-16 sm:mb-20">
+          <div className="flex flex-col md:flex-row justify-between gap-8 sm:gap-10 mb-10 sm:mb-12">
             <div className="max-w-[300px]">
               <div className="flex items-center gap-3 mb-6">
                 <img src="/logo.png" alt="EBW 2026" className="h-9 w-auto object-contain" />
