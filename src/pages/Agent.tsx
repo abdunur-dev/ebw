@@ -29,7 +29,7 @@ const Agent: React.FC = () => {
   }
 
   return (
-    <div className="h-screen bg-background flex flex-col overflow-hidden">
+    <div className="h-dvh bg-background flex flex-col overflow-hidden">
       {/* Header */}
       <AgentHeader
         onToggleSidebar={() => setMobileSidebarOpen(!mobileSidebarOpen)}

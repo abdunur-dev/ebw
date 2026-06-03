@@ -39,7 +39,7 @@ const CTA: React.FC = () => {
             <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
           </motion.button>
 
-          <div className="mt-10 flex items-center justify-center gap-6 text-xs text-muted-foreground font-mono">
+          <div className="mt-10 flex items-center justify-center gap-4 sm:gap-6 text-xs text-muted-foreground font-mono flex-wrap">
             <span className="flex items-center gap-1.5">
               <div className="w-1.5 h-1.5 rounded-full bg-primary/60" />
               Addis Ababa

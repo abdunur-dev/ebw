@@ -98,14 +98,14 @@ const SuggestedCommands: React.FC<SuggestedCommandsProps> = ({ onSelect }) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: i * 0.06 }}
               onClick={() => onSelect(suggestion.text)}
-              className={`glass-card-hover rounded-xl px-4 py-3 text-left flex items-center gap-3 group ${styles.hover}`}
+              className={`glass-card-hover rounded-xl px-4 py-3.5 text-left flex items-center gap-3 group min-h-[44px] ${styles.hover}`}
             >
               <div
-                className={`w-8 h-8 rounded-lg ${styles.iconBg} border ${styles.iconBorder} flex items-center justify-center flex-shrink-0`}
+                className={`w-9 h-9 rounded-lg ${styles.iconBg} border ${styles.iconBorder} flex items-center justify-center flex-shrink-0`}
               >
-                <Icon size={14} className={styles.iconText} />
+                <Icon size={16} className={styles.iconText} />
               </div>
-              <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors leading-snug">
+              <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors leading-snug">
                 {suggestion.text}
               </span>
             </motion.button>

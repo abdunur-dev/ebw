@@ -106,21 +106,21 @@ const ConfirmCard: React.FC<ConfirmCardProps> = ({
       </div>
 
       {/* Actions */}
-      <div className="flex gap-2">
+      <div className="flex gap-3">
         <button
           onClick={onConfirm}
           disabled={disabled}
-          className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg btn-neon-primary text-xs disabled:opacity-50 disabled:cursor-not-allowed"
+          className="flex-1 flex items-center justify-center gap-1.5 px-4 py-3 rounded-lg btn-neon-primary text-sm disabled:opacity-50 disabled:cursor-not-allowed min-h-[44px]"
         >
           Confirm
-          <ArrowRight size={12} />
+          <ArrowRight size={16} />
         </button>
         <button
           onClick={onCancel}
           disabled={disabled}
-          className="flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg border border-border/50 text-xs text-muted-foreground hover:text-foreground hover:border-border transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+          className="flex items-center justify-center gap-1.5 px-4 py-3 rounded-lg border border-border/50 text-sm text-muted-foreground hover:text-foreground hover:border-border transition-all disabled:opacity-50 disabled:cursor-not-allowed min-h-[44px]"
         >
-          <X size={12} />
+          <X size={16} />
           Cancel
         </button>
       </div>

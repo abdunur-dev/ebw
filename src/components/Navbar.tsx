@@ -103,9 +103,9 @@ const Navbar: React.FC = () => {
           )}
           <button
             onClick={() => navigate("/app")}
-            className="btn-neon-primary text-sm"
+            className="btn-neon-primary text-sm min-h-[44px] px-6"
           >
-            Launch App
+            {connected ? "Dashboard" : "Register Now"}
           </button>
         </div>
 
@@ -134,24 +134,26 @@ const Navbar: React.FC = () => {
                 <button
                   key={link.label}
                   onClick={() => handleNavClick(link.href)}
-                  className="flex items-center gap-3 rounded-lg px-4 py-3 font-mono text-sm uppercase tracking-widest text-muted-foreground hover:text-primary hover:bg-primary/5 transition-all text-left"
+                  className="flex items-center gap-3 rounded-lg px-4 py-3.5 font-mono text-sm uppercase tracking-widest text-muted-foreground hover:text-primary hover:bg-primary/5 transition-all text-left min-h-[44px]"
                 >
                   <span className="text-primary">{">"}</span>
                   {link.label}
                 </button>
               ))}
-              <div className="border-t border-border/30 my-2 pt-3 flex items-center gap-2 px-4 py-2 font-mono text-xs text-muted-foreground">
-                <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
-                </span>
-                EBW 2026
-              </div>
+              {connected && address && (
+                <button
+                  onClick={() => { setMobileOpen(false); navigate("/agent"); }}
+                  className="flex items-center gap-2 px-4 py-3 rounded-lg bg-muted/30 border border-border/40 text-sm font-mono text-foreground hover:border-primary/30 transition-all mt-1 min-h-[44px]"
+                >
+                  <div className="w-2 h-2 rounded-full bg-primary shrink-0" />
+                  {shortenAddress(address)}
+                </button>
+              )}
               <button
                 onClick={() => { setMobileOpen(false); navigate("/app"); }}
-                className="btn-neon-primary text-sm mt-2"
+                className="btn-neon-primary text-sm mt-2 min-h-[44px]"
               >
-                Launch App
+                {connected ? "Agent Dashboard" : "Register Now"}
               </button>
             </div>
           </motion.div>

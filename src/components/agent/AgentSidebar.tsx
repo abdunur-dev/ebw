@@ -247,14 +247,14 @@ const AgentSidebar: React.FC<AgentSidebarProps> = ({
             </div>
 
             {/* Bottom actions */}
-            <div className="flex flex-col gap-2 mt-auto">
+            <div className="flex flex-col gap-3 mt-auto">
               {/* Clear history */}
               {messageCount > 0 && (
                 <button
                   onClick={onClearHistory}
-                  className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl border border-border/40 text-muted-foreground text-xs font-medium hover:text-foreground hover:border-border/60 transition-all"
+                  className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl border border-border/40 text-muted-foreground text-sm font-medium hover:text-foreground hover:border-border/60 transition-all min-h-[44px]"
                 >
-                  <Trash2 size={12} />
+                  <Trash2 size={16} />
                   Clear Chat History
                 </button>
               )}
@@ -262,9 +262,9 @@ const AgentSidebar: React.FC<AgentSidebarProps> = ({
               {/* Disconnect button */}
               <button
                 onClick={handleDisconnect}
-                className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl border border-destructive/20 bg-destructive/5 text-destructive text-xs font-medium hover:bg-destructive/10 transition-all"
+                className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl border border-destructive/20 bg-destructive/5 text-destructive text-sm font-medium hover:bg-destructive/10 transition-all min-h-[44px]"
               >
-                <LogOut size={12} />
+                <LogOut size={16} />
                 Disconnect Wallet
               </button>
             </div>

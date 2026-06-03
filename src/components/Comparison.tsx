@@ -55,12 +55,12 @@ const Comparison: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto overflow-x-auto">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="rounded-3xl overflow-hidden border border-border/60 bg-card/40 card-border-glow"
+            className="rounded-3xl border border-border/60 bg-card/40 card-border-glow min-w-[600px]"
           >
             <div className="grid grid-cols-3 bg-white/[0.03] border-b border-border/50">
               <div className="p-6 font-semibold text-muted-foreground font-mono text-xs uppercase tracking-wider">Feature</div>

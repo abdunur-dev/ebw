@@ -130,16 +130,16 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ agent }) => {
           <button
             onClick={() => handleSend()}
             disabled={!input.trim() || isLoading}
-            className={`w-9 h-9 rounded-xl flex items-center justify-center transition-all duration-300 ${
+            className={`w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300 ${
               input.trim()
                 ? "bg-primary/10 border border-border/40 text-primary"
                 : "bg-muted/30 border border-border/30 text-muted-foreground"
             }`}
           >
             {isLoading ? (
-              <Loader2 size={14} className="animate-spin" />
+              <Loader2 size={16} className="animate-spin" />
             ) : (
-              <Send size={14} />
+              <Send size={16} />
             )}
           </button>
         </div>

@@ -61,22 +61,22 @@ const ReceiveCard: React.FC<ReceiveCardProps> = ({ address, amount }) => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-2 w-full mt-2">
+      <div className="flex flex-col gap-3 w-full mt-2">
         <a 
           href={solanaPayUri} 
-          className="w-full flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-primary/10 border border-primary/30 text-xs font-semibold text-primary hover:bg-primary/20 transition-all"
+          className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-primary/10 border border-primary/30 text-sm font-semibold text-primary hover:bg-primary/20 transition-all min-h-[44px]"
         >
           Open in Wallet
-          <ExternalLink size={12} />
+          <ExternalLink size={16} />
         </a>
         <a 
           href={qrUrl} 
           download="solagent-payment.png"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg border border-border/50 text-[10px] text-muted-foreground hover:text-foreground hover:border-border transition-all"
+          className="w-full flex items-center justify-center gap-1.5 px-4 py-3 rounded-lg border border-border/50 text-sm text-muted-foreground hover:text-foreground hover:border-border transition-all min-h-[44px]"
         >
-          <Download size={12} />
+          <Download size={16} />
           Save QR Code
         </a>
       </div>

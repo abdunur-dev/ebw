@@ -48,10 +48,10 @@ const Footer: React.FC = () => {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg border border-border/60 bg-card/40 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/30 transition-all duration-300 hover:scale-105"
+                className="w-11 h-11 rounded-lg border border-border/60 bg-card/40 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/30 transition-all duration-300 hover:scale-105"
                 aria-label={link.label}
               >
-                <link.icon size={16} />
+                <link.icon size={18} />
               </a>
             ))}
             <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-primary/15 bg-primary/5 text-[10px] text-primary font-mono">

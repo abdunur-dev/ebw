@@ -76,7 +76,6 @@
     font-family: 'Space Grotesk', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
   }
 
   ::selection {
@@ -461,7 +460,8 @@
 .hero {
   position: relative;
   width: 100%;
-  min-height: calc(100vh - 80px);
+  min-height: 100vh;
+  padding-top: 64px;
   background: #001B4D;
   overflow: hidden;
   display: flex;
@@ -772,4 +772,46 @@
 .footer-section {
   background: #001B4D;
   border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+/* ── RESPONSIVE OVERRIDES ── */
+@media (max-width: 767px) {
+  .site-nav {
+    padding: 16px 20px;
+  }
+  .nav-links {
+    gap: 16px;
+  }
+  .nav-link {
+    font-size: 11px;
+  }
+  .feat-card {
+    padding: 24px;
+  }
+  .comp-row td {
+    padding: 14px 12px;
+  }
+  .ticker-wrap {
+    padding: 0 16px;
+  }
+  .ticker-track {
+    gap: 20px;
+  }
+  .chat-window {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 639px) {
+  .btn-solana {
+    padding: 10px 18px;
+    font-size: 11px;
+  }
+  .btn-ghost {
+    padding: 8px 14px;
+    font-size: 11px;
+  }
+  .hero {
+    padding-top: 56px;
+  }
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import Navbar from '@/components/Navbar';
 
 const roles = ["Inclusive Innovation.", "Blockchain for Every Ethiopian.", "July 31 - August 1, 2026."];
 
@@ -88,19 +89,7 @@ const Index: React.FC = () => {
   return (
     <div className="bg-[#001B4D] min-h-screen text-white font-body selection:bg-ebw-gold/30">
       
-      {/* NAV (sticky, outside hero) */}
-      <nav className="site-nav">
-        <a className="nav-logo no-underline">
-          <div className="w-8 h-8 bg-ebw-gold rounded-lg flex items-center justify-center font-display font-extrabold text-white text-xl">E</div>
-          <span className="font-display font-extrabold tracking-[0.05em] uppercase">EBW</span>
-        </a>
-        <div className="nav-links">
-          <a href="#features" className="nav-link">Features</a>
-          <a href="#how-it-works" className="nav-link">How it Works</a>
-          <a href="#faq" className="nav-link">FAQ</a>
-          <button onClick={handleLaunch} className="btn-solana">Register Now</button>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* ════════════ HERO ════════════ */}
       <section className="hero">
@@ -174,7 +163,7 @@ const Index: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.9 }}
-              className="flex items-center gap-6 sm:gap-10 mt-12 sm:mt-16 justify-center lg:justify-start"
+              className="flex items-center gap-6 sm:gap-10 mt-12 sm:mt-16 justify-center lg:justify-start flex-wrap"
             >
               <div>
                 <div className="text-xl sm:text-2xl font-bold font-display">500+</div>
@@ -616,7 +605,7 @@ const Index: React.FC = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="flex items-center justify-center gap-8 mt-14 text-[11px] font-medium uppercase tracking-widest text-white/25"
+            className="flex items-center justify-center gap-4 sm:gap-8 mt-14 text-[11px] font-medium uppercase tracking-widest text-white/25 flex-wrap"
           >
             <span>Addis Ababa</span>
             <span className="w-1 h-1 rounded-full bg-white/20" />
