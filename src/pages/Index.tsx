@@ -92,6 +92,7 @@ const Index: React.FC = () => {
 
       {/* ════════════ HERO ════════════ */}
       <section className="hero">
+        <div className="absolute inset-0 bg-pixel-grid-animated opacity-30 pointer-events-none" />
         <div className="absolute top-20 left-[8%] w-16 h-16 border border-ebw-gold/20 rotate-45 animate-float-slow" />
         <div className="absolute top-40 right-[12%] w-24 h-24 border border-ebw-gold/15 rotate-12 animate-float-medium" />
         <div className="absolute bottom-32 left-[18%] w-12 h-12 bg-ebw-gold/10 rotate-45 animate-float-slow" style={{ animationDelay: "2s" }} />
@@ -316,13 +317,13 @@ const Index: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6 }}
-            className="mb-16 sm:mb-20"
+            className="mb-20 sm:mb-24"
           >
             <div className="text-ebw-gold font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Getting Here</div>
             <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl">How Can I Attend?</h2>
           </motion.div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 sm:gap-16 relative z-10">
             {[
               { num: '01', title: 'Register Online', desc: 'Sign up through our registration page. Early bird tickets are 50% off until June 30.' },
               { num: '02', title: 'Travel to Addis', desc: 'The Science Museum is in the heart of Addis Ababa. Flights arrive at Bole International Airport.' },
@@ -337,13 +338,13 @@ const Index: React.FC = () => {
                 className="group text-center md:text-left relative"
               >
                 {i < 2 && (
-                  <div className="hidden md:block absolute top-1/2 -right-6 sm:-right-8 w-px h-16 bg-gradient-to-b from-transparent via-ebw-gold/20 to-transparent -translate-y-1/2" />
+                  <div className="hidden md:block absolute top-1/2 -right-8 sm:-right-10 w-px h-24 bg-gradient-to-b from-transparent via-ebw-gold/20 to-transparent -translate-y-1/2" />
                 )}
                 {i < 2 && (
                   <div className="md:hidden absolute left-1/2 -bottom-4 w-px h-8 bg-gradient-to-b from-ebw-gold/30 to-transparent -translate-x-1/2" />
                 )}
-                <div className="text-5xl sm:text-6xl font-display font-black text-white/5 mb-6 group-hover:text-ebw-gold/10 transition-colors">{step.num}</div>
-                <h4 className="text-lg sm:text-xl font-bold mb-4">{step.title}</h4>
+                <div className="text-5xl sm:text-6xl font-display font-black text-white/5 mb-8 group-hover:text-ebw-gold/10 transition-colors">{step.num}</div>
+                <h4 className="text-lg sm:text-xl font-bold mb-5">{step.title}</h4>
                 <p className="text-white/50 leading-relaxed text-sm sm:text-base">{step.desc}</p>
               </motion.div>
             ))}
