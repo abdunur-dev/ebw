@@ -334,8 +334,16 @@ const Index: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.6, delay: i * 0.15 }}
-                className="group text-center md:text-left"
+                className="group text-center md:text-left relative"
               >
+                {i < 2 && (
+                  <>
+                    <svg className="hidden md:block absolute top-8 -right-6 sm:-right-8 w-8 sm:w-12 text-ebw-gold/20" viewBox="0 0 60 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+                      <path d="M0 8h50m0 0l-8-6m8 6l-8 6" />
+                    </svg>
+                    <div className="md:hidden absolute left-1/2 -bottom-4 w-px h-8 bg-gradient-to-b from-ebw-gold/30 to-transparent -translate-x-1/2" />
+                  </>
+                )}
                 <div className="text-5xl sm:text-6xl font-display font-black text-white/5 mb-6 group-hover:text-ebw-gold/10 transition-colors">{step.num}</div>
                 <h4 className="text-lg sm:text-xl font-bold mb-4">{step.title}</h4>
                 <p className="text-white/50 leading-relaxed text-sm sm:text-base">{step.desc}</p>
