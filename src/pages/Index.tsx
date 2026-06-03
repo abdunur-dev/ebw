@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 
-const roles = ["Inclusive Innovation.", "Blockchain for Every Ethiopian.", "July 31 - August 1, 2026."];
+const roles = ["Inclusive Innovation.", "Blockchain for Every Ethiopian."];
 
 const chatSequence = [
   { role: "user", text: "When is EBW 2026?" },
@@ -127,7 +127,7 @@ const Index: React.FC = () => {
               className="font-display font-bold leading-[1.08] tracking-[-0.025em] mb-6" 
               style={{ fontSize: 'clamp(2.2rem, 5vw, 4.8rem)' }}
             >
-              <span className="text-ebw-gold">Inclusive Innovation</span><br/><span className="text-ebw-gold font-mono tracking-wider text-lg sm:text-xl">for Every Ethiopian</span>
+                            Inclusive Innovation<br/><span className="text-ebw-gold font-mono tracking-wider text-lg sm:text-xl">for Every Ethiopian</span><br/><span className="text-white/80 text-base sm:text-lg tracking-normal font-sans">July 31 – August 1, 2026</span>
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
