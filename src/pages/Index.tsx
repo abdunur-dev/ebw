@@ -469,7 +469,8 @@ const Index: React.FC = () => {
             className="text-center mb-16 sm:mb-24"
           >
             <div className="text-ebw-gold font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Timeline</div>
-            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl">Event Schedule</h2>
+            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mb-6">Event Schedule</h2>
+            <div className="w-16 h-0.5 bg-ebw-gold/40 mx-auto" />
           </motion.div>
           
           <div className="relative">
