@@ -652,7 +652,7 @@ const Index: React.FC = () => {
             <div className="max-w-[260px]">
               <div className="flex items-center gap-2 mb-3">
                 <img src="/logo.png" alt="EBW 2026" className="h-7 w-7 object-cover rounded-full" />
-                <span className="font-display font-bold text-base tracking-[0.05em] uppercase text-ebw-gold">EBW</span>
+                <span className="font-display font-bold text-base tracking-[0.05em] uppercase text-white">EBW</span>
               </div>
               <p className="text-white/40 text-xs leading-relaxed mb-4">Ethiopian Blockchain Week 2026. Inclusive innovation for every Ethiopian. July 31 - August 1, Addis Ababa.</p>
               <a href="https://github.com/abdunur-dev/ebw-2026" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-white/40 hover:text-ebw-gold transition-colors text-xs">
