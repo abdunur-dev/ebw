@@ -126,7 +126,7 @@ const Index: React.FC = () => {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="font-display font-bold leading-[1.15] mb-4"
             >
-              <div className="text-white">Inclusive Innovation</div>
+              <div className="text-white font-extrabold uppercase tracking-wider">Inclusive Innovation</div>
               <div className="text-ebw-gold text-[clamp(1.4rem,3vw,2.8rem)] font-semibold">for Every Ethiopian</div>
               <div className="text-white/60 text-[clamp(0.9rem,1.8vw,1.3rem)] font-normal tracking-normal">July 31 – August 1, 2026</div>
             </motion.h1>
