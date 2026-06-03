@@ -308,6 +308,7 @@ const Index: React.FC = () => {
 
       {/* ════════════ HOW IT WORKS ════════════ */}
       <section id="how-it-works" className="py-24 sm:py-32 px-6 sm:px-10 lg:px-[72px] relative overflow-hidden bg-ebw-mesh-dark scroll-mt-20">
+        <div className="absolute inset-0 bg-pixel-grid-animated opacity-20 pointer-events-none" />
         <div className="absolute top-1/2 right-0 w-[40%] h-[60%] bg-ebw-gold/5 blur-[120px] rounded-full pointer-events-none animate-float-slow"></div>
         <div className="absolute -left-32 bottom-0 w-64 h-64 bg-ebw-gold/[0.03] rounded-full blur-[100px] pointer-events-none animate-float-medium"></div>
         <div className="max-w-[1200px] mx-auto">
@@ -355,6 +356,7 @@ const Index: React.FC = () => {
 
       {/* ════════════ CAPABILITIES ════════════ */}
       <section id="features" className="py-24 sm:py-32 px-6 sm:px-10 lg:px-[72px] bg-black/40 relative overflow-hidden scroll-mt-20">
+        <div className="absolute inset-0 bg-pixel-grid-animated opacity-20 pointer-events-none" />
         <div className="absolute inset-0 bg-ebw-mesh" />
         <div className="max-w-[1200px] mx-auto relative z-10">
           <motion.div 
@@ -576,6 +578,7 @@ const Index: React.FC = () => {
 
       {/* ════════════ CTA ════════════ */}
       <section id="cta-register" className="relative overflow-hidden border-t border-white/5 bg-[#001B4D]">
+        <div className="absolute inset-0 bg-pixel-grid-animated opacity-20 pointer-events-none" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_center,_hsl(48_100%_48%_/_0.12)_0%,_transparent_60%)]" />
         <div className="absolute inset-0 opacity-30">
           <motion.div
@@ -638,8 +641,9 @@ const Index: React.FC = () => {
       </section>
 
       {/* ════════════ FOOTER ════════════ */}
-      <footer className="footer-section py-8 sm:py-10 px-6 sm:px-10 lg:px-[72px]">
-        <div className="max-w-[1200px] mx-auto">
+      <footer className="footer-section py-8 sm:py-10 px-6 sm:px-10 lg:px-[72px] relative overflow-hidden">
+        <div className="absolute inset-0 bg-pixel-grid-animated opacity-15 pointer-events-none" />
+        <div className="max-w-[1200px] mx-auto relative z-10">
           <div className="flex flex-col md:flex-row justify-between gap-6 sm:gap-8 mb-8 sm:mb-10">
             <div className="max-w-[260px]">
               <div className="flex items-center gap-2 mb-3">
