@@ -317,7 +317,7 @@ const Index: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6 }}
-            className="mb-20 sm:mb-24"
+            className="mb-20 sm:mb-24 text-center"
           >
             <div className="text-ebw-gold font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Getting Here</div>
             <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl">How Can I Attend?</h2>
@@ -410,7 +410,7 @@ const Index: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6 }}
-            className="mb-16"
+            className="mb-16 text-center"
           >
             <div className="text-ebw-gold font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Compare</div>
             <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl">Why EBW 2026?</h2>
