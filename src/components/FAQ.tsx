@@ -9,24 +9,24 @@ import {
 
 const faqs = [
   {
-    question: "What is SolAgent?",
-    answer: "SolAgent is an AI-powered interface that lets you interact with the Solana blockchain using natural language. Instead of clicking through complex menus, you simply tell the agent what you want to do.",
+    question: "What is EBW 2026?",
+    answer: "EBW 2026 (Ethiopian Blockchain Week) is Ethiopia's premier blockchain conference, taking place July 31 - August 1 at the Science Museum in Addis Ababa. It features keynotes, workshops, a hackathon, and networking with 500+ attendees.",
   },
   {
-    question: "Is this safe to use?",
-    answer: "Yes! SolAgent only prepares the transactions. It never has access to your private keys. Every transaction requires your explicit approval and signature through your connected wallet (like Phantom or Solflare) before execution.",
+    question: "Where is the venue?",
+    answer: "The conference is held at the Science Museum, Addis Ababa, Ethiopia. The venue is centrally located with easy access to hotels, restaurants, and public transportation.",
   },
   {
-    question: "Does it work on Mainnet?",
-    answer: "Currently, SolAgent operates exclusively on the Solana Devnet for testing and demonstration purposes. All tokens used are testnet tokens with no real-world value.",
+    question: "How do I get tickets?",
+    answer: "Tickets are available on our registration page. Early bird pricing (up to 50% off) runs until June 30. We also offer scholarship tickets for students and developers from underserved regions.",
   },
   {
-    question: "How do I get Devnet SOL?",
-    answer: "You can easily get Devnet SOL directly through the agent. Just type 'Airdrop 2 SOL' in the chat, and the agent will request it from the official Solana faucet for you.",
+    question: "Are there scholarships available?",
+    answer: "Yes! We offer a generous scholarship program covering tickets, travel, and accommodation for students, developers, and community builders. Applications are reviewed on a rolling basis.",
   },
   {
-    question: "What kind of transactions can I do?",
-    answer: "You can check balances, request airdrops, send SOL to other wallets, swap tokens, stake your SOL, and even place mock predictions on-chain.",
+    question: "Can I sponsor or exhibit?",
+    answer: "Absolutely! We have multiple sponsorship tiers available. Exhibitor spots are also open for projects, startups, and protocols. Contact our partnerships team for details.",
   },
 ];
 
@@ -49,7 +49,7 @@ const FAQ: React.FC = () => {
               Frequently Asked Questions
             </h2>
             <p className="text-muted-foreground text-sm sm:text-base max-w-lg mx-auto">
-              Everything you need to know about SolAgent.
+              Everything you need to know about EBW 2026.
             </p>
           </div>
 

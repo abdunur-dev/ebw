@@ -108,10 +108,10 @@ const WalletConnect: React.FC = () => {
             {/* Logo */}
             <div className="flex items-center gap-2 mb-8 justify-center">
               <div className="w-8 h-8 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center">
-                <span className="text-primary font-bold text-sm">S</span>
+                <span className="text-primary font-bold text-sm">E</span>
               </div>
-              <span className="text-lg font-bold text-foreground text-glow-purple">
-                SolAgent
+              <span className="text-lg font-bold text-foreground text-glow-blue">
+                EBW
               </span>
             </div>
 
@@ -121,7 +121,7 @@ const WalletConnect: React.FC = () => {
                 Connect Your Wallet
               </h1>
               <p className="text-sm text-muted-foreground">
-                Choose your Solana wallet to access the AI agent
+                Choose your wallet to register for EBW 2026
               </p>
             </div>
 
@@ -165,7 +165,7 @@ const WalletConnect: React.FC = () => {
 
             {/* Official Wallet Button as fallback */}
             <div className="flex justify-center mb-8">
-              <WalletMultiButton className="!bg-primary !text-white !font-bold !rounded-xl !h-12 !px-8 hover:!bg-primary/90 transition-all shadow-[0_0_20px_-5px_rgba(153,69,255,0.3)]" />
+              <WalletMultiButton className="!bg-primary !text-white !font-bold !rounded-xl !h-12 !px-8 hover:!bg-primary/90 transition-all shadow-[0_0_20px_-5px_rgba(0,180,216,0.3)]" />
             </div>
 
             <div className="relative mb-6">
@@ -271,8 +271,7 @@ const WalletConnect: React.FC = () => {
             {/* Footer note */}
             {!connected && (
               <p className="text-[11px] text-muted-foreground text-center mt-6 leading-relaxed">
-                Your keys stay with you. SolAgent never has access to your
-                private keys or funds.
+                Secure checkout powered by Solana. Your keys, your control.
               </p>
             )}
           </div>

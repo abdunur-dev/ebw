@@ -2,21 +2,21 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const roles = ["Just Talk. It Executes.", "Say It. Get It Done.", "Words Become Actions."];
+const roles = ["Inclusive Innovation.", "Blockchain for Every Ethiopian.", "July 31 - August 1, 2026."];
 
 const chatSequence = [
-  { role: "user", text: "Swap 2 SOL for USDC at the best rate" },
+  { role: "user", text: "When is EBW 2026?" },
   { role: "typing" },
-  { role: "ai", text: "Found the best route via Jupiter. Swapping 2 SOL for 312.45 USDC. Confirming transaction..." },
-  { role: "ai", text: "✅ Done! 312.45 USDC received. Confirmed in 0.4s." },
-  { role: "user", text: "Send 1 SOL to Bob" },
+  { role: "ai", text: "EBW 2026 runs July 31 - August 1 at the Science Museum, Addis Ababa. Two days of keynotes, workshops, and networking!" },
+  { role: "ai", text: "✅ Early bird tickets are 50% off until June 30!" },
+  { role: "user", text: "Who is speaking?" },
   { role: "typing" },
-  { role: "ai", text: "Sending 1 SOL to 8xH7j... Confirmed in 0.3s." },
-  { role: "ai", text: "✅ 1 SOL sent successfully!" },
-  { role: "user", text: "Stake 5 SOL with best APR" },
+  { role: "ai", text: "We have 30+ speakers confirmed including blockchain pioneers, fintech leaders, and policymakers from across Africa." },
+  { role: "ai", text: "🎉 Full speaker lineup will be announced in May!" },
+  { role: "user", text: "How do I register?" },
   { role: "typing" },
-  { role: "ai", text: "Staking 5 SOL with validator SerGo... Confirmed in 0.5s." },
-  { role: "ai", text: "🎉 5 SOL staked. Earning ~8% APY." },
+  { role: "ai", text: "Visit ebw2026.com/register or click Register Now. Student and developer scholarships are available!" },
+  { role: "ai", text: "🚀 See you at EBW 2026!" },
 ];
 
 const Index: React.FC = () => {
@@ -60,24 +60,24 @@ const Index: React.FC = () => {
 
   const faqs = [
     {
-      q: "What is SolAgent?",
-      a: "SolAgent is an AI-powered agent for the Solana blockchain that lets you execute complex transactions like swaps, transfers, and staking using natural language. No more complex UIs—just talk to Solana."
+      q: "What is EBW 2026?",
+      a: "EBW 2026 (Ethiopian Blockchain Week) is Ethiopia's premier blockchain conference, taking place July 31 - August 1 at the Science Museum in Addis Ababa. It features keynotes, workshops, a hackathon, and networking with 500+ attendees."
     },
     {
-      q: "Is this safe to use?",
-      a: "Absolutely. SolAgent is non-custodial and open-source. Your private keys never leave your wallet, and every transaction requires your explicit approval via your preferred wallet (Phantom, Backpack, etc.)."
+      q: "Where is the venue?",
+      a: "The conference is held at the Science Museum, Addis Ababa, Ethiopia. The venue is centrally located with easy access to hotels, restaurants, and public transportation."
     },
     {
-      q: "Does it work on Mainnet?",
-      a: "Currently, SolAgent is in Alpha and optimized for Solana Devnet. This allows users to test the AI capabilities safely. Mainnet launch is scheduled for Q3 2026 as per our roadmap."
+      q: "How do I get tickets?",
+      a: "Tickets are available on our registration page. Early bird pricing (up to 50% off) runs until June 30. We also offer scholarship tickets for students and developers from underserved regions."
     },
     {
-      q: "How do I get Devnet SOL?",
-      a: "You can get free Devnet SOL from the official Solana Faucet at faucet.solana.com. Simply paste your wallet address and request an airdrop to start testing SolAgent immediately."
+      q: "Are there scholarships available?",
+      a: "Yes! We offer a generous scholarship program covering tickets, travel, and accommodation for students, developers, and community builders. Applications are reviewed on a rolling basis."
     },
     {
-      q: "What kind of transactions can I do?",
-      a: "You can perform token swaps via Jupiter, bridge assets across 60+ chains via LI.FI, stake SOL with validators, send instant transfers, and even interact with prediction markets—all through simple text commands."
+      q: "Can I sponsor or exhibit?",
+      a: "Absolutely! We have multiple sponsorship tiers available. Exhibitor spots are also open for projects, startups, and protocols. Contact our partnerships team for details."
     }
   ];
 
@@ -86,33 +86,33 @@ const Index: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#0d0d0d] min-h-screen text-white font-body selection:bg-solana-purple/30">
+    <div className="bg-[#0d0d0d] min-h-screen text-white font-body selection:bg-ebw-blue/30">
       
       {/* NAV (sticky, outside hero) */}
       <nav className="site-nav">
         <a className="nav-logo no-underline">
-          <div className="w-8 h-8 bg-solana-purple rounded-lg flex items-center justify-center font-display font-extrabold text-white text-xl">S</div>
-          <span className="font-display font-extrabold tracking-[0.05em] uppercase">SolAgent</span>
+          <div className="w-8 h-8 bg-ebw-blue rounded-lg flex items-center justify-center font-display font-extrabold text-white text-xl">E</div>
+          <span className="font-display font-extrabold tracking-[0.05em] uppercase">EBW</span>
         </a>
         <div className="nav-links">
           <a href="#features" className="nav-link">Features</a>
           <a href="#how-it-works" className="nav-link">How it Works</a>
           <a href="#faq" className="nav-link">FAQ</a>
-          <button onClick={handleLaunch} className="btn-solana">Launch App</button>
+          <button onClick={handleLaunch} className="btn-solana">Register Now</button>
         </div>
       </nav>
 
       {/* ════════════ HERO ════════════ */}
       <section className="hero">
         <div className="absolute inset-0 bg-pixel-grid-animated opacity-30 pointer-events-none" />
-        <div className="absolute top-20 left-[8%] w-16 h-16 border border-solana-purple/20 rotate-45 animate-float-slow" />
-        <div className="absolute top-40 right-[12%] w-24 h-24 border border-solana-purple/15 rotate-12 animate-float-medium" />
-        <div className="absolute bottom-32 left-[18%] w-12 h-12 bg-solana-purple/10 rotate-45 animate-float-slow" style={{ animationDelay: "2s" }} />
-        <div className="absolute top-1/4 left-[4%] w-20 h-20 border-2 border-solana-purple/10 rotate-[30deg] animate-float-medium" style={{ animationDelay: "1s" }} />
-        <div className="absolute bottom-1/4 right-[6%] w-14 h-14 bg-solana-purple/8 rotate-[60deg] animate-float-slow" style={{ animationDelay: "3s" }} />
-        <div className="absolute top-[60%] left-[55%] w-10 h-10 border border-solana-purple/20 rotate-[20deg] animate-float-medium" style={{ animationDelay: "1.5s" }} />
-        <div className="absolute top-[12%] left-[42%] w-8 h-8 bg-solana-purple/15 rotate-45 animate-float-slow" style={{ animationDelay: "0.5s" }} />
-        <div className="absolute bottom-[15%] right-[28%] w-16 h-16 border border-solana-purple/10 rotate-[75deg] animate-float-medium" style={{ animationDelay: "2.5s" }} />
+        <div className="absolute top-20 left-[8%] w-16 h-16 border border-ebw-blue/20 rotate-45 animate-float-slow" />
+        <div className="absolute top-40 right-[12%] w-24 h-24 border border-ebw-blue/15 rotate-12 animate-float-medium" />
+        <div className="absolute bottom-32 left-[18%] w-12 h-12 bg-ebw-blue/10 rotate-45 animate-float-slow" style={{ animationDelay: "2s" }} />
+        <div className="absolute top-1/4 left-[4%] w-20 h-20 border-2 border-ebw-blue/10 rotate-[30deg] animate-float-medium" style={{ animationDelay: "1s" }} />
+        <div className="absolute bottom-1/4 right-[6%] w-14 h-14 bg-ebw-blue/8 rotate-[60deg] animate-float-slow" style={{ animationDelay: "3s" }} />
+        <div className="absolute top-[60%] left-[55%] w-10 h-10 border border-ebw-blue/20 rotate-[20deg] animate-float-medium" style={{ animationDelay: "1.5s" }} />
+        <div className="absolute top-[12%] left-[42%] w-8 h-8 bg-ebw-blue/15 rotate-45 animate-float-slow" style={{ animationDelay: "0.5s" }} />
+        <div className="absolute bottom-[15%] right-[28%] w-16 h-16 border border-ebw-blue/10 rotate-[75deg] animate-float-medium" style={{ animationDelay: "2.5s" }} />
 
         {/* Hero Content */}
         <div className="relative z-10 flex-1 flex flex-col lg:flex-row items-center justify-center px-6 sm:px-10 lg:px-[72px] gap-8 lg:gap-12">
@@ -127,9 +127,9 @@ const Index: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-solana-purple/10 border border-solana-purple/20 text-solana-purple text-xs font-semibold mb-6">
-                <div className="w-1.5 h-1.5 rounded-full bg-solana-purple animate-pulse"></div>
-                Powered by Solana
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-ebw-blue/10 border border-ebw-blue/20 text-ebw-blue text-xs font-semibold mb-6">
+                <div className="w-1.5 h-1.5 rounded-full bg-ebw-blue animate-pulse"></div>
+                Ethiopian Blockchain Week 2026
               </div>
             </motion.div>
             <motion.h1 
@@ -139,7 +139,7 @@ const Index: React.FC = () => {
               className="font-display font-bold leading-[1.08] tracking-[-0.025em] mb-6" 
               style={{ fontSize: 'clamp(2.2rem, 5vw, 4.8rem)' }}
             >
-              Your AI Agent<br/><span className="text-solana-purple">on Solana</span>
+              Inclusive Innovation<br/><span className="text-ebw-blue">for Every Ethiopian</span>
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -147,7 +147,7 @@ const Index: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="text-lg sm:text-xl mb-3 font-semibold"
             >
-              <span className="typing-cursor text-gradient-purple">{displayText}</span>
+              <span className="typing-cursor text-gradient-blue">{displayText}</span>
             </motion.p>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -155,7 +155,7 @@ const Index: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="text-white/60 text-base sm:text-lg lg:text-xl mb-10 leading-relaxed max-w-[550px]"
             >
-              Connect your wallet and let AI handle swaps, transfers, staking and more — all in plain English.
+              Join 500+ developers, founders, and innovators at Ethiopia's premier blockchain conference. July 31 - August 1, 2026.
             </motion.p>
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
@@ -163,7 +163,7 @@ const Index: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.7 }}
               className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start"
             >
-              <button onClick={handleLaunch} className="btn-solana text-sm px-8 py-4">Launch App</button>
+              <button onClick={handleLaunch} className="btn-solana text-sm px-8 py-4">Register Now</button>
               <a href="#how-it-works">
                 <button className="btn-ghost text-sm px-8 py-4">How it Works →</button>
               </a>
@@ -177,16 +177,16 @@ const Index: React.FC = () => {
               className="flex items-center gap-6 sm:gap-10 mt-12 sm:mt-16 justify-center lg:justify-start"
             >
               <div>
-                <div className="text-xl sm:text-2xl font-bold font-display">50K+</div>
-                <div className="text-white/40 text-[10px] sm:text-xs uppercase tracking-widest mt-1">Transactions</div>
+                <div className="text-xl sm:text-2xl font-bold font-display">500+</div>
+                <div className="text-white/40 text-[10px] sm:text-xs uppercase tracking-widest mt-1">Attendees</div>
               </div>
               <div>
-                <div className="text-xl sm:text-2xl font-bold font-display">12K+</div>
-                <div className="text-white/40 text-[10px] sm:text-xs uppercase tracking-widest mt-1">Users</div>
+                <div className="text-xl sm:text-2xl font-bold font-display">30+</div>
+                <div className="text-white/40 text-[10px] sm:text-xs uppercase tracking-widest mt-1">Speakers</div>
               </div>
               <div>
-                <div className="text-xl sm:text-2xl font-bold font-display text-solana-purple">&lt;1s</div>
-                <div className="text-white/40 text-[10px] sm:text-xs uppercase tracking-widest mt-1">Execution</div>
+                <div className="text-xl sm:text-2xl font-bold font-display text-ebw-blue">2</div>
+                <div className="text-white/40 text-[10px] sm:text-xs uppercase tracking-widest mt-1">Days</div>
               </div>
             </motion.div>
           </motion.div>
@@ -201,11 +201,11 @@ const Index: React.FC = () => {
             <div className="chat-window flex flex-col">
               <div className="flex items-center justify-between mb-6 pb-4 border-b border-white/5">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-solana-purple rounded-full flex items-center justify-center font-bold">S</div>
+                  <div className="w-10 h-10 bg-ebw-blue rounded-full flex items-center justify-center font-bold">E</div>
                   <div>
-                    <div className="text-sm font-bold">SolAgent</div>
-                    <div className="text-[10px] text-solana-purple flex items-center gap-1">
-                      <div className="w-1 h-1 rounded-full bg-solana-purple"></div>
+                    <div className="text-sm font-bold">EBW</div>
+                    <div className="text-[10px] text-ebw-blue flex items-center gap-1">
+                      <div className="w-1 h-1 rounded-full bg-ebw-blue"></div>
                       Online
                     </div>
                   </div>
@@ -226,11 +226,11 @@ const Index: React.FC = () => {
                         className="flex items-center gap-2 px-4 py-3 shrink-0"
                       >
                         <div className="flex gap-1">
-                          <span className="w-2 h-2 rounded-full bg-solana-purple/40 animate-bounce" style={{ animationDelay: "0ms" }} />
-                          <span className="w-2 h-2 rounded-full bg-solana-purple/40 animate-bounce" style={{ animationDelay: "150ms" }} />
-                          <span className="w-2 h-2 rounded-full bg-solana-purple/40 animate-bounce" style={{ animationDelay: "300ms" }} />
+                          <span className="w-2 h-2 rounded-full bg-ebw-blue/40 animate-bounce" style={{ animationDelay: "0ms" }} />
+                          <span className="w-2 h-2 rounded-full bg-ebw-blue/40 animate-bounce" style={{ animationDelay: "150ms" }} />
+                          <span className="w-2 h-2 rounded-full bg-ebw-blue/40 animate-bounce" style={{ animationDelay: "300ms" }} />
                         </div>
-                        <span className="text-[11px] text-solana-purple/60 font-mono">SolAgent is thinking...</span>
+                        <span className="text-[11px] text-ebw-blue/60 font-mono">EBW is thinking...</span>
                       </motion.div>
                     ) : (
                       <motion.div
@@ -252,7 +252,7 @@ const Index: React.FC = () => {
               <div className="mt-8 relative">
                 <div className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white/30 text-sm flex items-center justify-between">
                   Type a command...
-                  <div className="w-5 h-5 bg-solana-purple rounded flex items-center justify-center">
+                  <div className="w-5 h-5 bg-ebw-blue rounded flex items-center justify-center">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="3"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                   </div>
                 </div>
@@ -270,14 +270,14 @@ const Index: React.FC = () => {
 
       {/* ════════════ LOGO TICKER ════════════ */}
       <section className="py-20 border-y border-white/5 bg-black/20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-solana-mesh-dark" />
+        <div className="absolute inset-0 bg-ebw-mesh-dark" />
         <motion.p 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           className="text-center text-white/30 text-[11px] uppercase tracking-[0.3em] mb-12 relative z-10"
         >
-          Compatible with all major Solana Wallets
+          Proudly supported by our partners
         </motion.p>
         <div className="ticker-wrap">
           <div className="ticker-track">
@@ -317,9 +317,9 @@ const Index: React.FC = () => {
       </section>
 
       {/* ════════════ HOW IT WORKS ════════════ */}
-      <section id="how-it-works" className="py-24 sm:py-32 px-6 sm:px-10 lg:px-[72px] relative overflow-hidden bg-solana-mesh-dark">
-        <div className="absolute top-1/2 right-0 w-[40%] h-[60%] bg-solana-purple/5 blur-[120px] rounded-full pointer-events-none animate-float-slow"></div>
-        <div className="absolute -left-32 bottom-0 w-64 h-64 bg-solana-purple/[0.03] rounded-full blur-[100px] pointer-events-none animate-float-medium"></div>
+      <section id="how-it-works" className="py-24 sm:py-32 px-6 sm:px-10 lg:px-[72px] relative overflow-hidden bg-ebw-mesh-dark">
+        <div className="absolute top-1/2 right-0 w-[40%] h-[60%] bg-ebw-blue/5 blur-[120px] rounded-full pointer-events-none animate-float-slow"></div>
+        <div className="absolute -left-32 bottom-0 w-64 h-64 bg-ebw-blue/[0.03] rounded-full blur-[100px] pointer-events-none animate-float-medium"></div>
         <div className="max-w-[1200px] mx-auto">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
@@ -328,15 +328,15 @@ const Index: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="mb-16 sm:mb-20"
           >
-            <div className="text-solana-purple font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Simple by Design</div>
+            <div className="text-ebw-blue font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Simple by Design</div>
             <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl">How It Works</h2>
           </motion.div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 relative z-10">
             {[
-              { num: '01', title: 'Connect Wallet', desc: 'Connect any Solana wallet in one click. Phantom, Backpack, Solflare and more.' },
-              { num: '02', title: 'Type Your Command', desc: 'Tell SolAgent what to do in plain English. No confusing interfaces, no technical steps.' },
-              { num: '03', title: 'AI Executes On-Chain', desc: 'SolAgent understands your intent and executes the transaction securely on Solana.' }
+              { num: '01', title: 'Register for EBW', desc: 'Secure your spot at EBW 2026. Early bird tickets available with significant discounts until June 30.' },
+              { num: '02', title: 'Attend the Conference', desc: 'Join us July 31 - August 1 at the Science Museum, Addis Ababa for keynotes, workshops, and networking.' },
+              { num: '03', title: 'Connect & Build', desc: 'Meet developers, founders, and investors. Collaborate on projects shaping Ethiopia\'s blockchain future.' }
             ].map((step, i) => (
               <motion.div 
                 key={i} 
@@ -346,7 +346,7 @@ const Index: React.FC = () => {
                 transition={{ duration: 0.6, delay: i * 0.15 }}
                 className="group text-center md:text-left"
               >
-                <div className="text-5xl sm:text-6xl font-display font-black text-white/5 mb-6 group-hover:text-solana-purple/10 transition-colors">{step.num}</div>
+                <div className="text-5xl sm:text-6xl font-display font-black text-white/5 mb-6 group-hover:text-ebw-blue/10 transition-colors">{step.num}</div>
                 <h4 className="text-lg sm:text-xl font-bold mb-4">{step.title}</h4>
                 <p className="text-white/50 leading-relaxed text-sm sm:text-base">{step.desc}</p>
               </motion.div>
@@ -357,7 +357,7 @@ const Index: React.FC = () => {
 
       {/* ════════════ CAPABILITIES ════════════ */}
       <section id="features" className="py-24 sm:py-32 px-6 sm:px-10 lg:px-[72px] bg-black/40 relative overflow-hidden">
-        <div className="absolute inset-0 bg-solana-mesh" />
+        <div className="absolute inset-0 bg-ebw-mesh" />
         <div className="max-w-[1200px] mx-auto relative z-10">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
@@ -366,21 +366,21 @@ const Index: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16 sm:mb-20"
           >
-            <div className="text-solana-purple font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Capabilities</div>
-            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mb-6">What SolAgent Can Do</h2>
-            <p className="text-white/40 max-w-[600px] mx-auto text-base sm:text-lg">One AI agent that replaces dozens of interfaces. Talk naturally and get things done on Solana.</p>
+            <div className="text-ebw-blue font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Highlights</div>
+            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mb-6">Conference Highlights</h2>
+            <p className="text-white/40 max-w-[600px] mx-auto text-base sm:text-lg">Two days of world-class content, connections, and collaboration at Ethiopia's premier blockchain event.</p>
           </motion.div>
           
           <div className="feat-grid">
             {[
-              { tag: 'AI', title: 'AI-Powered Agent', desc: 'Understands natural language and executes complex DeFi actions automatically.' },
-              { tag: 'DeFi', title: 'Cross-Chain Bridging', desc: 'Bridge assets across 60+ chains (Ethereum, Base, etc.) using LI.FI\'s powerful aggregation.' },
-              { tag: 'DeFi', title: 'On-Chain Swaps', desc: 'Execute token swaps via LI.FI & Jupiter Aggregator just by typing \'Swap 5 SOL to USDC\'.' },
-              { tag: 'Staking', title: 'Secure Staking', desc: 'Stake your SOL with top validators and start earning rewards with simple commands.' },
-              { tag: 'Payments', title: 'Payment Requests', desc: 'Generate Solana Pay compatible QR codes for specific amounts with \'Request 1 SOL\'.' },
-              { tag: 'Markets', title: 'Prediction Markets', desc: 'Place on-chain predictions on real-world events and crypto prices instantly.' },
-              { tag: 'Transfers', title: 'Instant Transfers', desc: 'Send SOL or any SPL token to any address instantly. Just say \'Send 1 SOL to...\'.' },
-              { tag: 'Portfolio', title: 'Asset Management', desc: 'Check balances, view your transaction history, and manage your NFT collection in one place.' }
+              { tag: 'Talks', title: 'Keynote Speakers', desc: 'Hear from leading voices in blockchain, AI, and fintech from across Africa and the world.' },
+              { tag: 'Learn', title: 'Interactive Workshops', desc: 'Hands-on sessions covering Solana development, DeFi, NFTs, and real-world blockchain applications.' },
+              { tag: 'Network', title: 'Networking Opportunities', desc: 'Connect with 500+ developers, founders, investors, and policymakers shaping Ethiopia\'s blockchain future.' },
+              { tag: 'Build', title: 'Hackathon', desc: 'Build innovative solutions on Solana and compete for prizes. Open to developers of all skill levels.' },
+              { tag: 'Expo', title: 'Exhibition Hall', desc: 'Explore cutting-edge projects, startups, and protocols from Ethiopia\'s growing blockchain ecosystem.' },
+              { tag: 'Funding', title: 'Investor Meetups', desc: 'Pitch your ideas to VCs and angel investors actively funding African blockchain startups.' },
+              { tag: 'Social', title: 'Community Meetups', desc: 'Side events, after-parties, and informal gatherings to build lasting connections.' },
+              { tag: 'Access', title: 'Scholarship Program', desc: 'Sponsored tickets for students, developers, and community builders from underserved regions.' }
             ].map((feat, i) => (
               <motion.div 
                 key={i} 
@@ -390,7 +390,7 @@ const Index: React.FC = () => {
                 transition={{ duration: 0.5, delay: i * 0.06 }}
                 className="feat-card"
               >
-                <div className="inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider mb-6 bg-solana-purple/10 text-solana-purple">
+                <div className="inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider mb-6 bg-ebw-blue/10 text-ebw-blue">
                   {feat.tag}
                 </div>
                 <h4 className="text-lg font-bold mb-3">{feat.title}</h4>
@@ -403,7 +403,7 @@ const Index: React.FC = () => {
 
       {/* ════════════ COMPARISON ════════════ */}
       <section className="py-24 sm:py-32 px-6 sm:px-10 lg:px-[72px] relative overflow-hidden">
-        <div className="absolute inset-0 bg-solana-mesh-dark" />
+        <div className="absolute inset-0 bg-ebw-mesh-dark" />
         <div className="max-w-[1000px] mx-auto relative z-10">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
@@ -412,9 +412,9 @@ const Index: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <div className="text-solana-purple font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Compare</div>
-            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mb-6">Why SolAgent?</h2>
-            <p className="text-white/40 text-base sm:text-lg">Compare the traditional wallet experience with the new era of AI-driven blockchain interaction.</p>
+            <div className="text-ebw-blue font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Compare</div>
+            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mb-6">Why EBW 2026?</h2>
+            <p className="text-white/40 text-base sm:text-lg">Compare traditional conferences with EBW 2026's innovative approach to blockchain events.</p>
           </motion.div>
           
           <motion.div 
@@ -428,17 +428,17 @@ const Index: React.FC = () => {
               <thead className="comp-header">
                 <tr>
                   <th>Feature</th>
-                  <th>Traditional Wallet</th>
-                  <th>SolAgent AI</th>
+                  <th>Traditional Conference</th>
+                  <th>EBW 2026</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  ['Transaction Speed', 'Multiple clicks & approvals', 'One natural sentence'],
-                  ['DeFi Complexity', 'Navigating 10+ tabs', 'Unified AI interface'],
-                  ['Asset Tracking', 'Manual dashboard checks', 'Real-time AI insights'],
-                  ['Security', 'Manual signature review', 'AI-assisted risk analysis'],
-                  ['User Experience', 'Complex & Technical', 'Human-like & Intuitive']
+                  ['Ticket Cost', '$500 - $2000+', '$50 - $200 (Early bird)'],
+                  ['Content Access', 'Limited to one track', 'All tracks, workshops & expo'],
+                  ['Networking', 'Expensive add-ons', 'Built-in networking app'],
+                  ['Scholarships', 'Rare or none', 'Generous student & dev scholarships'],
+                  ['Community Focus', 'Corporate-heavy', 'Local-first, inclusive innovation']
                 ].map((row, i) => (
                   <motion.tr 
                     key={i} 
@@ -461,7 +461,7 @@ const Index: React.FC = () => {
 
       {/* ════════════ ROADMAP ════════════ */}
       <section className="py-24 sm:py-32 px-6 sm:px-10 lg:px-[72px] bg-black/20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-solana-mesh" />
+        <div className="absolute inset-0 bg-ebw-mesh" />
         <div className="max-w-[1000px] mx-auto relative z-10">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
@@ -470,8 +470,8 @@ const Index: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16 sm:mb-24"
           >
-            <div className="text-solana-purple font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Timeline</div>
-            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl">Roadmap</h2>
+            <div className="text-ebw-blue font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Timeline</div>
+            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl">Event Schedule</h2>
           </motion.div>
           
           <div className="relative">
@@ -479,10 +479,10 @@ const Index: React.FC = () => {
             
             <div className="space-y-16 sm:space-y-24">
               {[
-                { phase: 'Phase 1', title: 'Project Foundation', date: 'Q1 2026', items: ['Core Agent Engine', 'Devnet Integration', 'Natural Language Parsing'], status: 'In Progress' },
-                { phase: 'Phase 2', title: 'Alpha Release', date: 'Q2 2026', items: ['Staking & Swaps', 'Payment Requests', 'LI.FI Cross-Chain Integration'] },
-                { phase: 'Phase 3', title: 'Mainnet Launch', date: 'Q3 2026', items: ['Mainnet Liquidity', 'Advanced Risk Analysis', 'Multi-Chain Expansion'] },
-                { phase: 'Phase 4', title: 'AI Ecosystem', date: 'Q4 2026', items: ['Yield Optimization', 'Automated Rebalancing', 'DAO Governance'] }
+                { phase: 'Pre-Event', title: 'Early Bird Registration', date: 'Now - June 30', items: ['Discounted tickets available', 'Speaker submissions open', 'Hackathon registration live'], status: 'In Progress' },
+                { phase: 'Day 1', title: 'Main Conference', date: 'July 31, 2026', items: ['Opening keynotes', 'Workshops & panels', 'Networking lunch & expo'] },
+                { phase: 'Day 2', title: 'Hackathon & Closing', date: 'August 1, 2026', items: ['Hackathon finals & demos', 'Investor meetups', 'Closing ceremony & after-party'] },
+                { phase: 'Post-Event', title: 'Community Building', date: 'Q3-Q4 2026', items: ['Grant program launch', 'Monthly meetups', 'EBW 2027 announcement'] }
               ].map((milestone, i) => (
                 <motion.div 
                   key={i} 
@@ -494,7 +494,7 @@ const Index: React.FC = () => {
                   <div className="flex-1 text-center md:text-right md:px-12">
                     {i % 2 === 0 ? (
                       <>
-                        <div className="text-solana-purple font-bold mb-1">{milestone.phase}</div>
+                        <div className="text-ebw-blue font-bold mb-1">{milestone.phase}</div>
                         <h4 className="text-lg sm:text-xl font-bold mb-4">{milestone.title}</h4>
                         <div className="text-white/30 text-sm font-display">{milestone.date}</div>
                       </>
@@ -512,7 +512,7 @@ const Index: React.FC = () => {
                   <div className="flex-1 text-center md:text-left md:px-12">
                     {i % 2 !== 0 ? (
                       <>
-                        <div className="text-solana-purple font-bold mb-1">{milestone.phase}</div>
+                        <div className="text-ebw-blue font-bold mb-1">{milestone.phase}</div>
                         <h4 className="text-lg sm:text-xl font-bold mb-4">{milestone.title}</h4>
                         <div className="text-white/30 text-sm font-display">{milestone.date}</div>
                       </>
@@ -521,7 +521,7 @@ const Index: React.FC = () => {
                         {milestone.items.map((item, j) => (
                           <div key={j} className="text-white/50 text-sm">{item}</div>
                         ))}
-                        {milestone.status && <div className="inline-block px-2 py-0.5 bg-solana-purple/10 text-solana-purple text-[10px] font-bold rounded mt-2 uppercase">{milestone.status}</div>}
+                        {milestone.status && <div className="inline-block px-2 py-0.5 bg-ebw-blue/10 text-ebw-blue text-[10px] font-bold rounded mt-2 uppercase">{milestone.status}</div>}
                       </div>
                     )}
                   </div>
@@ -537,9 +537,9 @@ const Index: React.FC = () => {
         <div className="absolute inset-0 bg-pixel-grid opacity-20 pointer-events-none" />
         <div className="max-w-[1000px] mx-auto relative z-10">
           <div className="mb-12 sm:mb-16 text-center">
-            <div className="text-solana-purple font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Support</div>
+            <div className="text-ebw-blue font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Support</div>
             <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mb-6">Frequently Asked Questions</h2>
-            <p className="text-white/40 text-base sm:text-lg max-w-lg mx-auto">Everything you need to know about SolAgent.</p>
+            <p className="text-white/40 text-base sm:text-lg max-w-lg mx-auto">Everything you need to know about EBW 2026.</p>
           </div>
           
           <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 items-start">
@@ -550,15 +550,15 @@ const Index: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="group bg-white/[0.03] border border-white/5 rounded-xl p-6 hover:bg-white/[0.06] hover:border-solana-purple/20 transition-all duration-300 cursor-pointer"
+                className="group bg-white/[0.03] border border-white/5 rounded-xl p-6 hover:bg-white/[0.06] hover:border-ebw-blue/20 transition-all duration-300 cursor-pointer"
                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
               >
                 <div className="flex items-start justify-between gap-4">
-                  <h3 className={`font-semibold text-sm sm:text-base transition-colors duration-300 ${openFaq === i ? 'text-solana-purple' : 'text-white/80 group-hover:text-white'}`}>
+                  <h3 className={`font-semibold text-sm sm:text-base transition-colors duration-300 ${openFaq === i ? 'text-ebw-blue' : 'text-white/80 group-hover:text-white'}`}>
                     {faq.q}
                   </h3>
-                  <div className={`w-6 h-6 rounded-full border shrink-0 flex items-center justify-center transition-all duration-300 ${openFaq === i ? 'bg-solana-purple/20 border-solana-purple/40 rotate-45' : 'border-white/10 group-hover:border-white/20'}`}>
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className={openFaq === i ? 'text-solana-purple' : 'text-white/30'}>
+                  <div className={`w-6 h-6 rounded-full border shrink-0 flex items-center justify-center transition-all duration-300 ${openFaq === i ? 'bg-ebw-blue/20 border-ebw-blue/40 rotate-45' : 'border-white/10 group-hover:border-white/20'}`}>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className={openFaq === i ? 'text-ebw-blue' : 'text-white/30'}>
                       <path d="M12 5v14M5 12h14"/>
                     </svg>
                   </div>
@@ -587,7 +587,7 @@ const Index: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight"
           >
-            Ready to Talk to Solana?
+            Ready to Join EBW 2026?
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -596,7 +596,7 @@ const Index: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="text-white/50 text-base sm:text-lg mt-5 mb-10 max-w-md mx-auto leading-relaxed"
           >
-            Connect your wallet and start executing on-chain in seconds. No learning curve, no complex UIs.
+            Register now and be part of Ethiopia's premier blockchain event. Early bird tickets are selling fast!
           </motion.p>
           <motion.button 
             initial={{ opacity: 0, y: 20 }}
@@ -608,7 +608,7 @@ const Index: React.FC = () => {
             onClick={handleLaunch} 
             className="btn-solana text-base px-10 py-4"
           >
-            Launch App
+            Register Now
           </motion.button>
           
           <motion.div 
@@ -618,11 +618,11 @@ const Index: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="flex items-center justify-center gap-8 mt-14 text-[11px] font-medium uppercase tracking-widest text-white/25"
           >
-            <span>Non-custodial</span>
+            <span>Addis Ababa</span>
             <span className="w-1 h-1 rounded-full bg-white/20" />
-            <span>Open source</span>
+            <span>July 31 - Aug 1</span>
             <span className="w-1 h-1 rounded-full bg-white/20" />
-            <span>Built on Solana</span>
+            <span>Inclusive Innovation</span>
           </motion.div>
         </div>
       </section>
@@ -633,11 +633,11 @@ const Index: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between gap-10 sm:gap-12 mb-16 sm:mb-20">
             <div className="max-w-[300px]">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-8 h-8 bg-solana-purple rounded-lg flex items-center justify-center font-display font-extrabold text-white">S</div>
-                <span className="font-display font-extrabold text-xl tracking-[0.05em] uppercase">SolAgent</span>
+                <div className="w-8 h-8 bg-ebw-blue rounded-lg flex items-center justify-center font-display font-extrabold text-white">E</div>
+                <span className="font-display font-extrabold text-xl tracking-[0.05em] uppercase">EBW</span>
               </div>
-              <p className="text-white/40 text-sm leading-relaxed mb-8">Your AI-powered agent on Solana. Bridging the gap between human intent and on-chain execution.</p>
-              <a href="https://github.com/abdunur-dev/solAgent" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-white/40 hover:text-solana-purple transition-colors text-sm">
+              <p className="text-white/40 text-sm leading-relaxed mb-8">Ethiopian Blockchain Week 2026. Inclusive innovation for every Ethiopian. July 31 - August 1, Addis Ababa.</p>
+              <a href="https://github.com/abdunur-dev/ebw-2026" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-white/40 hover:text-ebw-blue transition-colors text-sm">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                 <span className="text-xs">GitHub</span>
               </a>
@@ -645,15 +645,15 @@ const Index: React.FC = () => {
             
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-12">
               <div>
-                <h5 className="font-bold text-xs uppercase tracking-widest mb-6 text-solana-purple">Platform</h5>
+                <h5 className="font-bold text-xs uppercase tracking-widest mb-6 text-ebw-blue">Platform</h5>
                 <ul className="space-y-4 text-sm text-white/40">
-                  <li onClick={handleLaunch} className="hover:text-white cursor-pointer transition-colors">Launch App</li>
+                  <li onClick={handleLaunch} className="hover:text-white cursor-pointer transition-colors">Register Now</li>
                   <li className="hover:text-white cursor-pointer transition-colors">How it Works</li>
                   <li className="hover:text-white cursor-pointer transition-colors">API Docs</li>
                 </ul>
               </div>
               <div>
-                <h5 className="font-bold text-xs uppercase tracking-widest mb-6 text-solana-purple">Community</h5>
+                <h5 className="font-bold text-xs uppercase tracking-widest mb-6 text-ebw-blue">Community</h5>
                 <ul className="space-y-4 text-sm text-white/40">
                   <li className="hover:text-white cursor-pointer transition-colors">X / Twitter</li>
                   <li className="hover:text-white cursor-pointer transition-colors">Discord</li>
@@ -672,13 +672,13 @@ const Index: React.FC = () => {
           
           <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/5 gap-6">
             <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.3em] text-white/20">
-              Forged with <span className="text-solana-purple">❤</span> & code
+              Forged with <span className="text-ebw-blue">❤</span> & code
             </div>
             <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.3em] text-white/20">
-              Built on Solana
+              Addis Ababa, Ethiopia
             </div>
             <div className="text-[10px] uppercase tracking-[0.3em] text-white/20">
-              © 2026 SolAgent. All rights reserved.
+              © 2026 EBW. All rights reserved.
             </div>
           </div>
         </div>

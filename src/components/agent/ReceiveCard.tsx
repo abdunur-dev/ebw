@@ -17,7 +17,7 @@ const ReceiveCard: React.FC<ReceiveCardProps> = ({ address, amount }) => {
   };
 
   const solanaPayUri = amount 
-    ? `solana:${address}?amount=${amount}&label=SolAgent&message=Payment%20Request`
+    ? `solana:${address}?amount=${amount}&label=EBW&message=Payment%20Request`
     : `solana:${address}`;
 
   const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(solanaPayUri)}&bgcolor=ffffff&color=000000`;

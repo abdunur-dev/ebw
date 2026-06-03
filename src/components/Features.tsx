@@ -14,51 +14,51 @@ import {
 const features = [
   {
     icon: Brain,
-    title: "AI-Powered Agent",
-    description: "Understands natural language and executes complex DeFi actions automatically.",
-    tag: "AI",
+    title: "Keynote Speakers",
+    description: "Hear from leading voices in blockchain, AI, and fintech from across Africa and the world.",
+    tag: "Talks",
   },
   {
     icon: Globe,
-    title: "Cross-Chain Bridging",
-    description: "Bridge assets across 60+ chains (Ethereum, Base, etc.) using LI.FI's powerful aggregation.",
-    tag: "DeFi",
+    title: "Interactive Workshops",
+    description: "Hands-on sessions covering Solana development, DeFi, NFTs, and real-world blockchain applications.",
+    tag: "Learn",
   },
   {
     icon: ArrowLeftRight,
-    title: "On-Chain Swaps",
-    description: "Execute token swaps via LI.FI & Jupiter Aggregator just by typing 'Swap 5 SOL to USDC'.",
-    tag: "DeFi",
+    title: "Networking Opportunities",
+    description: "Connect with 500+ developers, founders, investors, and policymakers shaping Ethiopia's blockchain future.",
+    tag: "Network",
   },
   {
     icon: Landmark,
-    title: "Secure Staking",
-    description: "Stake your SOL with top validators and start earning rewards with simple commands.",
-    tag: "Staking",
+    title: "Hackathon",
+    description: "Build innovative solutions on Solana and compete for prizes. Open to developers of all skill levels.",
+    tag: "Build",
   },
   {
     icon: QrCode,
-    title: "Payment Requests",
-    description: "Generate Solana Pay compatible QR codes for specific amounts with 'Request 1 SOL'.",
-    tag: "Payments",
+    title: "Exhibition Hall",
+    description: "Explore cutting-edge projects, startups, and protocols from Ethiopia's growing blockchain ecosystem.",
+    tag: "Expo",
   },
   {
     icon: Zap,
-    title: "Prediction Markets",
-    description: "Place on-chain predictions on real-world events and crypto prices instantly.",
-    tag: "Markets",
+    title: "Investor Meetups",
+    description: "Pitch your ideas to VCs and angel investors actively funding African blockchain startups.",
+    tag: "Funding",
   },
   {
     icon: Send,
-    title: "Instant Transfers",
-    description: "Send SOL or any SPL token to any address instantly. Just say 'Send 1 SOL to...'",
-    tag: "Transfers",
+    title: "Community Meetups",
+    description: "Side events, after-parties, and informal gatherings to build lasting connections with the community.",
+    tag: "Social",
   },
   {
     icon: Wallet,
-    title: "Asset Management",
-    description: "Check balances, view your transaction history, and manage your NFT collection in one place.",
-    tag: "Portfolio",
+    title: "Scholarship Program",
+    description: "Sponsored tickets for students, developers, and community builders from underserved regions.",
+    tag: "Access",
   },
 ];
 
@@ -88,11 +88,11 @@ const Features: React.FC = () => {
             <span className="text-primary">{">"}</span> Capabilities
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
-            What SolAgent Can Do
+            Conference Highlights
           </h2>
           <p className="mt-4 text-muted-foreground max-w-lg mx-auto text-sm sm:text-base leading-relaxed">
-            One AI agent that replaces dozens of interfaces.
-            Talk naturally and get things done on Solana.
+            Two days of world-class content, connections, and
+            collaboration at Ethiopia's premier blockchain event.
           </p>
         </motion.div>
 

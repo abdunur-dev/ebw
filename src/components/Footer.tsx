@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Github, Heart } from "lucide-react";
 
 const socialLinks = [
-  { label: "GitHub", href: "https://github.com/abdunur-dev/solAgent", icon: Github },
+  { label: "GitHub", href: "https://github.com/abdunur-dev/ebw-2026", icon: Github },
 ];
 
 const Footer: React.FC = () => {
@@ -20,14 +20,14 @@ const Footer: React.FC = () => {
           <div className="flex flex-col items-center md:items-start gap-2">
             <div className="flex items-center gap-2">
               <div className="w-7 h-7 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center">
-                <span className="text-primary font-bold text-xs">S</span>
+                <span className="text-primary font-bold text-xs">E</span>
               </div>
               <span className="text-base font-bold text-foreground">
-                Sol<span className="text-gradient-purple">Agent</span>
+                EBW
               </span>
             </div>
             <p className="text-xs text-muted-foreground font-mono">
-              Your AI-powered agent on Solana
+              Ethiopian Blockchain Week 2026
             </p>
           </div>
 
@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
             ))}
             <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-primary/15 bg-primary/5 text-[10px] text-primary font-mono">
               <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-              Built on Solana
+              Addis Ababa, Ethiopia
             </div>
           </div>
         </motion.div>
@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
           className="mt-8 pt-6 border-t border-border/20 flex flex-col sm:flex-row items-center justify-between gap-4"
         >
           <p className="text-xs text-muted-foreground font-mono">
-            &copy; {new Date().getFullYear()} SolAgent. All rights reserved.
+            &copy; {new Date().getFullYear()} EBW 2026. All rights reserved.
           </p>
         </motion.div>
       </div>

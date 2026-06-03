@@ -20,37 +20,37 @@ const CTA: React.FC = () => {
           className="max-w-2xl mx-auto text-center"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-5">
-            Ready to Talk to{" "}
-            <span className="text-shimmer">Solana</span>?
+            Ready to Join{" "}
+            <span className="text-shimmer">EBW 2026</span>?
           </h2>
 
           <p className="text-muted-foreground text-sm sm:text-base max-w-md mx-auto mb-10 leading-relaxed">
-            Connect your wallet and start executing on-chain in seconds.
-            No learning curve, no complex UIs.
+            Register now and be part of Ethiopia's premier blockchain event.
+            Early bird tickets are selling fast!
           </p>
 
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
-            onClick={() => navigate("/app")}
+            onClick={() => navigate("/register")}
             className="btn-neon-primary text-base px-10 py-4 inline-flex items-center gap-2.5 group"
           >
-            Launch App
+            Register Now
             <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
           </motion.button>
 
           <div className="mt-10 flex items-center justify-center gap-6 text-xs text-muted-foreground font-mono">
             <span className="flex items-center gap-1.5">
               <div className="w-1.5 h-1.5 rounded-full bg-primary/60" />
-              Non-custodial
+              Addis Ababa
             </span>
             <span className="flex items-center gap-1.5">
               <div className="w-1.5 h-1.5 rounded-full bg-primary/60" />
-              Open source
+              July 31 - Aug 1
             </span>
             <span className="flex items-center gap-1.5">
               <div className="w-1.5 h-1.5 rounded-full bg-primary/60" />
-              Built on Solana
+              Inclusive Innovation
             </span>
           </div>
         </motion.div>

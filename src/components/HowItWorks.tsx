@@ -6,20 +6,20 @@ const steps = [
   {
     num: "01",
     icon: Wallet,
-    title: "Connect Wallet",
-    description: "Connect any Solana wallet in one click. Phantom, Backpack, Solflare and more.",
+    title: "Register for EBW",
+    description: "Secure your spot at EBW 2026. Early bird tickets available with significant discounts until June 30.",
   },
   {
     num: "02",
     icon: MessageSquareText,
-    title: "Type Your Command",
-    description: "Tell SolAgent what to do in plain English. No confusing interfaces, no technical steps.",
+    title: "Attend the Conference",
+    description: "Join us July 31 - August 1 at the Science Museum, Addis Ababa for keynotes, workshops, and networking.",
   },
   {
     num: "03",
     icon: Zap,
-    title: "AI Executes On-Chain",
-    description: "SolAgent understands your intent and executes the transaction securely on Solana.",
+    title: "Connect & Build",
+    description: "Meet developers, founders, and investors. Collaborate on projects shaping Ethiopia's blockchain future.",
   },
 ];
 
@@ -81,7 +81,7 @@ const HowItWorks: React.FC = () => {
                   </div>
                 </div>
 
-                <h3 className="text-lg font-semibold text-foreground mb-2 transition-colors group-hover:text-gradient-purple">
+                <h3 className="text-lg font-semibold text-foreground mb-2 transition-colors group-hover:text-gradient-blue">
                   {step.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">

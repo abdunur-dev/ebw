@@ -5,29 +5,29 @@ import { Check, X, Brain } from "lucide-react";
 const Comparison: React.FC = () => {
   const rows = [
     {
-      feature: "Transaction Speed",
-      manual: "Multiple clicks & approvals",
-      agent: "One natural sentence",
+      feature: "Ticket Cost",
+      manual: "$500 - $2000+",
+      agent: "$50 - $200 (Early bird)",
     },
     {
-      feature: "DeFi Complexity",
-      manual: "Navigating 10+ tabs",
-      agent: "Unified AI interface",
+      feature: "Content Access",
+      manual: "Limited to one track",
+      agent: "All tracks, workshops & expo",
     },
     {
-      feature: "Asset Tracking",
-      manual: "Manual dashboard checks",
-      agent: "Real-time AI insights",
+      feature: "Networking",
+      manual: "Expensive add-ons",
+      agent: "Built-in networking app",
     },
     {
-      feature: "Security",
-      manual: "Manual signature review",
-      agent: "AI-assisted risk analysis",
+      feature: "Scholarships",
+      manual: "Rare or none",
+      agent: "Generous student & dev scholarships",
     },
     {
-      feature: "User Experience",
-      manual: "Complex & Technical",
-      agent: "Human-like & Intuitive",
+      feature: "Community Focus",
+      manual: "Corporate-heavy",
+      agent: "Local-first, inclusive innovation",
     },
   ];
 
@@ -48,10 +48,10 @@ const Comparison: React.FC = () => {
             <span className="text-primary">{">"}</span> Compare
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Why SolAgent?
+            Why EBW 2026?
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-            Compare the traditional wallet experience with the new era of AI-driven blockchain interaction.
+            Compare traditional conferences with EBW 2026's innovative approach to blockchain events.
           </p>
         </motion.div>
 
@@ -67,10 +67,10 @@ const Comparison: React.FC = () => {
               <div className="p-6 font-semibold text-center border-x border-border/50 flex items-center justify-center gap-2 text-sm">
                 Traditional Wallet
               </div>
-              <div className="p-6 font-semibold text-center text-primary flex items-center justify-center gap-2 bg-primary/5">
-                <Brain size={18} />
-                SolAgent AI
-              </div>
+                <div className="p-6 font-semibold text-center text-primary flex items-center justify-center gap-2 bg-primary/5">
+                  <Brain size={18} />
+                  EBW 2026
+                </div>
             </div>
 
             {rows.map((row) => (

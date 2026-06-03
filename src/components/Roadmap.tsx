@@ -4,35 +4,35 @@ import { CheckCircle2, Rocket, Globe, Shield } from "lucide-react";
 
 const milestones = [
   {
-    phase: "Phase 1",
-    title: "Project Foundation",
-    date: "Q1 2026",
-    status: "completed",
-    items: ["Core Agent Engine", "Devnet Integration", "Natural Language Parsing"],
+    phase: "Pre-Event",
+    title: "Early Bird Registration",
+    date: "Now - June 30",
+    status: "current",
+    items: ["Discounted tickets available", "Speaker submissions open", "Hackathon registration live"],
     icon: CheckCircle2,
   },
   {
-    phase: "Phase 2",
-    title: "Alpha Release",
-    date: "Q2 2026",
-    status: "current",
-    items: ["Staking & Swaps", "Payment Requests", "LI.FI Cross-Chain Integration"],
+    phase: "Day 1",
+    title: "Main Conference",
+    date: "July 31, 2026",
+    status: "upcoming",
+    items: ["Opening keynotes", "Workshops & panels", "Networking lunch & expo"],
     icon: Rocket,
   },
   {
-    phase: "Phase 3",
-    title: "Mainnet Launch",
-    date: "Q3 2026",
+    phase: "Day 2",
+    title: "Hackathon & Closing",
+    date: "August 1, 2026",
     status: "upcoming",
-    items: ["Mainnet Liquidity", "Advanced Risk Analysis", "Multi-Chain Expansion"],
+    items: ["Hackathon finals & demos", "Investor meetups", "Closing ceremony & after-party"],
     icon: Globe,
   },
   {
-    phase: "Phase 4",
-    title: "AI Ecosystem",
-    date: "Q4 2026",
+    phase: "Post-Event",
+    title: "Community Building",
+    date: "Q3-Q4 2026",
     status: "upcoming",
-    items: ["Yield Optimization", "Automated Rebalancing", "DAO Governance"],
+    items: ["Grant program launch", "Monthly meetups", "EBW 2027 announcement"],
     icon: Shield,
   },
 ];
@@ -54,7 +54,7 @@ const Roadmap: React.FC = () => {
             Roadmap
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-            Our journey towards making DeFi accessible to everyone through the power of Artificial Intelligence.
+            The ultimate blockchain event experience — from registration to post-conference community.
           </p>
         </motion.div>
 
@@ -70,7 +70,7 @@ const Roadmap: React.FC = () => {
                 transition={{ delay: i * 0.1 }}
                 className={`relative p-8 rounded-2xl border transition-all duration-300 hover-lift ${
                   m.status === "current"
-                    ? "border-primary/40 bg-primary/5 shadow-[0_0_20px_-5px_rgba(153,69,255,0.15)]"
+                    ? "border-primary/40 bg-primary/5 shadow-[0_0_20px_-5px_rgba(0,180,216,0.15)]"
                     : "border-border/60 bg-card/40"
                 }`}
               >

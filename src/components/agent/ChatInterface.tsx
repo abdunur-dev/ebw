@@ -94,7 +94,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ agent }) => {
                       />
                     </div>
                     <span className="text-xs text-muted-foreground">
-                      SolAgent is thinking...
+                      EBW is thinking...
                     </span>
                   </div>
                 </div>
@@ -144,7 +144,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ agent }) => {
           </button>
         </div>
         <p className="text-[10px] text-muted-foreground/50 text-center mt-2">
-          SolAgent may make mistakes. Verify transactions before confirming.
+          EBW may make mistakes. Verify transactions before confirming.
         </p>
       </div>
     </div>

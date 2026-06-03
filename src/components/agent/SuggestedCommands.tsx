@@ -17,37 +17,37 @@ interface SuggestedCommandsProps {
 const suggestions = [
   {
     icon: Send,
-    text: "Send 0.5 SOL to ABC123...",
+    text: "View EBW 2026 schedule",
     color: "secondary" as const,
   },
   {
     icon: ArrowLeftRight,
-    text: "Swap 10 USDC to SOL",
+    text: "Register for the conference",
     color: "primary" as const,
   },
   {
     icon: Landmark,
-    text: "Stake 2 SOL",
+    text: "List keynote speakers",
     color: "secondary" as const,
   },
   {
     icon: ImageIcon,
-    text: "Show my NFTs",
+    text: "Find workshops and tracks",
     color: "primary" as const,
   },
   {
     icon: History,
-    text: "Show my transaction history",
+    text: "Sponsorship opportunities",
     color: "secondary" as const,
   },
   {
     icon: Zap,
-    text: "Predict 1 SOL on BTC > 100k",
+    text: "Hackathon details",
     color: "primary" as const,
   },
   {
     icon: QrCode,
-    text: "Request 1 SOL",
+    text: "Venue & travel info",
     color: "secondary" as const,
   },
 ];
@@ -77,7 +77,7 @@ const SuggestedCommands: React.FC<SuggestedCommandsProps> = ({ onSelect }) => {
         className="text-center mb-8"
       >
         <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center mx-auto mb-4">
-          <span className="text-primary font-bold text-xl">S</span>
+          <span className="text-primary font-bold text-xl">E</span>
         </div>
         <h2 className="text-xl font-bold text-foreground mb-1">
           How can I help?

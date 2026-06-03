@@ -5,15 +5,15 @@ import { Send, Bot, User } from "lucide-react";
 const messages = [
   {
     role: "user" as const,
-    text: "Swap 2 SOL for USDC at the best rate",
+    text: "When is EBW 2026 taking place?",
   },
   {
     role: "agent" as const,
-    text: "Found the best route via Jupiter. Swapping 2 SOL for 312.45 USDC. Confirming transaction...",
+    text: "EBW 2026 is happening July 31 - August 1 at the Science Museum, Addis Ababa. Two days of keynotes, workshops, and networking!",
   },
   {
     role: "agent" as const,
-    text: "Done! 312.45 USDC received. Transaction confirmed in 0.4s.",
+    text: "Early bird tickets are available now. Register before June 30 for 50% off!",
     status: "success",
   },
 ];
@@ -31,7 +31,7 @@ const ChatMockup: React.FC = () => {
             <Bot size={16} className="text-primary" />
           </div>
           <div>
-            <div className="text-sm font-semibold text-foreground">SolAgent</div>
+            <div className="text-sm font-semibold text-foreground">EBW</div>
             <div className="text-[10px] text-primary flex items-center gap-1">
               <span className="w-1.5 h-1.5 rounded-full bg-primary inline-block animate-pulse-glow" />
               Online

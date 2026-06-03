@@ -53,10 +53,10 @@ const Navbar: React.FC = () => {
           className="flex items-center gap-2 group"
         >
           <div className="w-8 h-8 rounded-lg bg-muted/30 border border-border/40 flex items-center justify-center">
-            <span className="text-foreground font-bold text-sm">S</span>
+            <span className="text-foreground font-bold text-sm">E</span>
           </div>
           <span className="text-lg font-bold text-foreground">
-            Sol<span className="text-gradient-purple">Agent</span>
+            EBW
           </span>
         </a>
 
@@ -89,7 +89,7 @@ const Navbar: React.FC = () => {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
             </span>
-            Solana
+            EBW 2026
           </div>
 
           {connected && address && (
@@ -145,7 +145,7 @@ const Navbar: React.FC = () => {
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
                 </span>
-                Solana
+                EBW 2026
               </div>
               <button
                 onClick={() => { setMobileOpen(false); navigate("/app"); }}

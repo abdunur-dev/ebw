@@ -1,7 +1,7 @@
 import type { StoredMessage } from "./types";
 
 const MAX_MESSAGES = 50;
-const STORAGE_PREFIX = "solAgent_chat_";
+const STORAGE_PREFIX = "ebw_chat_";
 
 function getKey(walletAddress: string): string {
   return `${STORAGE_PREFIX}${walletAddress}`;

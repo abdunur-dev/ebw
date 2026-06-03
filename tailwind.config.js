@@ -69,12 +69,13 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         neon: {
-          purple: "hsl(263 100% 63%)",
-          pink: "hsl(300 100% 50%)",
+          blue: "hsl(195 100% 45%)",
+          gold: "hsl(42 90% 55%)",
         },
-        solana: {
-          purple: '#9945FF',
-          dark: '#0d0d0d',
+        ebw: {
+          blue: '#00B4D8',
+          navy: '#021737',
+          gold: '#F0A500',
         }
       },
       borderRadius: {

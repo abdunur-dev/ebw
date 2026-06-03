@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import ChatMockup from "./ChatMockup";
 
-const roles = ["Just Talk. It Executes.", "Say It. Get It Done.", "Words Become Actions."];
+const roles = ["Inclusive Innovation.", "Blockchain for Every Ethiopian.", "July 31 - August 1, 2026."];
 
 const Hero: React.FC = () => {
   const navigate = useNavigate();
@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
                 </span>
                 <span className="text-xs font-medium text-primary tracking-wide uppercase font-mono">
-                  Powered by Solana
+                  Ethiopian Blockchain Week
                 </span>
               </div>
             </motion.div>
@@ -78,13 +78,13 @@ const Hero: React.FC = () => {
               transition={{ duration: 0.7, delay: 0.3 }}
             >
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] tracking-tight">
-                <span className="text-foreground">Your AI Agent</span>
+                <span className="text-foreground">Inclusive</span>
                 <br />
-                <span className="text-foreground">on </span>
-                <span className="text-shimmer">Solana</span>
+                <span className="text-foreground">Innovation</span>
+                <span className="text-shimmer">.</span>
               </h1>
               <p className="mt-3 text-xl sm:text-2xl lg:text-3xl font-semibold">
-                <span className="typing-cursor text-gradient-purple">
+                <span className="typing-cursor text-gradient-blue">
                   {displayText}
                 </span>
               </p>
@@ -97,8 +97,7 @@ const Hero: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="text-base sm:text-lg text-muted-foreground max-w-lg leading-relaxed"
             >
-              Connect your wallet and let AI handle swaps, transfers, staking
-              and more — all in plain English.
+              Join 500+ developers, founders, and innovators at Ethiopia's premier blockchain conference. July 31 - August 1, 2026.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -109,10 +108,10 @@ const Hero: React.FC = () => {
               className="flex flex-wrap gap-4"
             >
               <button
-                onClick={() => navigate("/app")}
+                onClick={() => navigate("/register")}
                 className="btn-neon-primary text-base flex items-center gap-2 group"
               >
-                Launch App
+                Register Now
                 <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
               </button>
               <a
@@ -123,7 +122,7 @@ const Hero: React.FC = () => {
                 }}
                 className="btn-neon-ghost text-base flex items-center gap-2 group"
               >
-                How it Works
+                Learn More
                 <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
               </a>
             </motion.div>
@@ -136,9 +135,9 @@ const Hero: React.FC = () => {
               className="flex gap-8 pt-4"
             >
               {[
-                { value: "50K+", label: "Transactions" },
-                { value: "12K+", label: "Users" },
-                { value: "<1s", label: "Execution" },
+                { value: "500+", label: "Attendees" },
+                { value: "30+", label: "Speakers" },
+                { value: "2", label: "Days" },
               ].map((stat) => (
                 <div key={stat.label}>
                   <div className="text-xl sm:text-2xl font-bold text-foreground">
