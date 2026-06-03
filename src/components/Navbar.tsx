@@ -47,11 +47,9 @@ const Navbar: React.FC = () => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
-          className="flex items-center gap-2 group"
+          className="flex items-center gap-3 group"
         >
-          <div className="w-8 h-8 rounded-lg bg-muted/30 border border-border/40 flex items-center justify-center">
-            <span className="text-foreground font-bold text-sm">E</span>
-          </div>
+          <img src="/logo.png" alt="EBW 2026" className="h-9 w-auto object-contain" />
           <span className="text-lg font-bold text-foreground">
             EBW
           </span>
