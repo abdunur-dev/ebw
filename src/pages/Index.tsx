@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 
@@ -21,7 +20,6 @@ const chatSequence = [
 ];
 
 const Index: React.FC = () => {
-  const navigate = useNavigate();
   const [currentRole, setCurrentRole] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -83,7 +81,8 @@ const Index: React.FC = () => {
   ];
 
   const handleLaunch = () => {
-    navigate('/app');
+    const el = document.getElementById('cta-register');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -566,7 +565,7 @@ const Index: React.FC = () => {
       </section>
 
       {/* ════════════ CTA ════════════ */}
-      <section className="relative overflow-hidden border-t border-white/5">
+      <section id="cta-register" className="relative overflow-hidden border-t border-white/5">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_center,_hsl(263_100%_63%_/_0.08)_0%,_transparent_60%)]" />
         <div className="max-w-[700px] mx-auto py-28 sm:py-36 px-6 text-center relative z-10">
           <motion.h2 

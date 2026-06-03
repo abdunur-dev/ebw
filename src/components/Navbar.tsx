@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import { useWallet } from "@solana/wallet-adapter-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { shortenAddress } from "@/lib/solana";
 
 const navLinks = [
   { label: "Features", href: "#features" },
@@ -15,9 +12,6 @@ const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const { connected, publicKey } = useWallet();
-  const navigate = useNavigate();
-  const address = publicKey?.toBase58() ?? "";
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -94,21 +88,11 @@ const Navbar: React.FC = () => {
             </span>
             EBW 2026
           </div>
-
-          {connected && address && (
-            <button
-              onClick={() => navigate("/agent")}
-              className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-muted/30 border border-border/40 text-xs font-mono text-foreground hover:border-primary/30 transition-all"
-            >
-              <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-              {shortenAddress(address)}
-            </button>
-          )}
           <button
-            onClick={() => navigate("/app")}
+            onClick={() => handleNavClick("#features")}
             className="btn-neon-primary text-sm min-h-[44px] px-6"
           >
-            {connected ? "Dashboard" : "Register Now"}
+            Register Now
           </button>
         </div>
 
@@ -143,20 +127,11 @@ const Navbar: React.FC = () => {
                   {link.label}
                 </button>
               ))}
-              {connected && address && (
-                <button
-                  onClick={() => { setMobileOpen(false); navigate("/agent"); }}
-                  className="flex items-center gap-2 px-4 py-3 rounded-lg bg-muted/30 border border-border/40 text-sm font-mono text-foreground hover:border-primary/30 transition-all mt-1 min-h-[44px]"
-                >
-                  <div className="w-2 h-2 rounded-full bg-primary shrink-0" />
-                  {shortenAddress(address)}
-                </button>
-              )}
               <button
-                onClick={() => { setMobileOpen(false); navigate("/app"); }}
+                onClick={() => { setMobileOpen(false); handleNavClick("#features"); }}
                 className="btn-neon-primary text-sm mt-2 min-h-[44px]"
               >
-                {connected ? "Agent Dashboard" : "Register Now"}
+                Register Now
               </button>
             </div>
           </motion.div>
