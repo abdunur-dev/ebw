@@ -565,8 +565,20 @@ const Index: React.FC = () => {
       </section>
 
       {/* ════════════ CTA ════════════ */}
-      <section id="cta-register" className="relative overflow-hidden border-t border-white/5">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_center,_hsl(263_100%_63%_/_0.08)_0%,_transparent_60%)]" />
+      <section id="cta-register" className="relative overflow-hidden border-t border-white/5 bg-[#001B4D]">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_center,_hsl(48_100%_48%_/_0.12)_0%,_transparent_60%)]" />
+        <div className="absolute inset-0 opacity-30">
+          <motion.div
+            className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-ebw-gold/10 blur-3xl"
+            animate={{ scale: [1, 1.3, 1], opacity: [0.3, 0.6, 0.3] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          />
+          <motion.div
+            className="absolute bottom-1/4 right-1/4 w-48 h-48 rounded-full bg-ebw-gold/10 blur-3xl"
+            animate={{ scale: [1, 1.4, 1], opacity: [0.2, 0.5, 0.2] }}
+            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          />
+        </div>
         <div className="max-w-[700px] mx-auto py-28 sm:py-36 px-6 text-center relative z-10">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
