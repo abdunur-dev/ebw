@@ -621,7 +621,7 @@ const Index: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between gap-10 sm:gap-12 mb-16 sm:mb-20">
             <div className="max-w-[300px]">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-8 h-8 bg-ebw-gold rounded-lg flex items-center justify-center font-display font-extrabold text-white">E</div>
+                <img src="/logo.png" alt="EBW 2026" className="h-9 w-auto object-contain" />
                 <span className="font-display font-extrabold text-xl tracking-[0.05em] uppercase">EBW</span>
               </div>
               <p className="text-white/40 text-sm leading-relaxed mb-8">Ethiopian Blockchain Week 2026. Inclusive innovation for every Ethiopian. July 31 - August 1, Addis Ababa.</p>
