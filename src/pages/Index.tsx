@@ -321,6 +321,7 @@ const Index: React.FC = () => {
           >
             <div className="text-ebw-gold font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Getting Here</div>
             <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl">How Can I Attend?</h2>
+            <div className="w-16 h-0.5 bg-ebw-gold/40 mx-auto mt-4" />
           </motion.div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 sm:gap-16 relative z-10">
@@ -365,7 +366,8 @@ const Index: React.FC = () => {
             className="text-center mb-16 sm:mb-20"
           >
             <div className="text-ebw-gold font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Highlights</div>
-            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mb-6">Conference Highlights</h2>
+            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl">Conference Highlights</h2>
+            <div className="w-16 h-0.5 bg-ebw-gold/40 mx-auto mt-4 mb-6" />
             <p className="text-white/40 max-w-[600px] mx-auto text-base sm:text-lg">Two days of world-class content, connections, and collaboration at Ethiopia's premier blockchain event.</p>
           </motion.div>
           
@@ -411,7 +413,8 @@ const Index: React.FC = () => {
             className="mb-16"
           >
             <div className="text-ebw-gold font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Compare</div>
-            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mb-6">Why EBW 2026?</h2>
+            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl">Why EBW 2026?</h2>
+            <div className="w-16 h-0.5 bg-ebw-gold/40 mx-auto mt-4 mb-6" />
             <p className="text-white/40 text-base sm:text-lg">Compare traditional conferences with EBW 2026's innovative approach to blockchain events.</p>
           </motion.div>
           
@@ -537,7 +540,8 @@ const Index: React.FC = () => {
         <div className="max-w-[1000px] mx-auto relative z-10">
           <div className="mb-12 sm:mb-16 text-center">
             <div className="text-ebw-gold font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Support</div>
-            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mb-6">Frequently Asked Questions</h2>
+            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl">Frequently Asked Questions</h2>
+            <div className="w-16 h-0.5 bg-ebw-gold/40 mx-auto mt-4 mb-6" />
             <p className="text-white/40 text-base sm:text-lg max-w-lg mx-auto">Everything you need to know about EBW 2026.</p>
           </div>
           
@@ -601,6 +605,7 @@ const Index: React.FC = () => {
           >
             Ready to Join EBW 2026?
           </motion.h2>
+          <div className="w-16 h-0.5 bg-ebw-gold/40 mx-auto mt-5 mb-8" />
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
