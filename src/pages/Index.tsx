@@ -155,7 +155,7 @@ const Index: React.FC = () => {
             >
               <button onClick={handleLaunch} className="btn-solana text-sm px-8 py-4">Register Now</button>
               <a href="#how-it-works">
-                <button className="btn-ghost text-sm px-8 py-4">How it Works →</button>
+                <button className="btn-ghost text-sm px-8 py-4">How to Attend →</button>
               </a>
             </motion.div>
             
@@ -318,15 +318,15 @@ const Index: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="mb-16 sm:mb-20"
           >
-            <div className="text-ebw-gold font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Simple by Design</div>
-            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl">How It Works</h2>
+            <div className="text-ebw-gold font-display font-bold text-sm tracking-widest uppercase mb-4">&gt; Getting Here</div>
+            <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl">How Can I Attend?</h2>
           </motion.div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 relative z-10">
             {[
-              { num: '01', title: 'Register for EBW', desc: 'Secure your spot at EBW 2026. Early bird tickets available with significant discounts until June 30.' },
-              { num: '02', title: 'Attend the Conference', desc: 'Join us July 31 - August 1 at the Science Museum, Addis Ababa for keynotes, workshops, and networking.' },
-              { num: '03', title: 'Connect & Build', desc: 'Meet developers, founders, and investors. Collaborate on projects shaping Ethiopia\'s blockchain future.' }
+              { num: '01', title: 'Register Online', desc: 'Sign up through our registration page. Early bird tickets are 50% off until June 30.' },
+              { num: '02', title: 'Travel to Addis', desc: 'The Science Museum is in the heart of Addis Ababa. Flights arrive at Bole International Airport.' },
+              { num: '03', title: 'Join the Week', desc: 'Two days of keynotes, workshops, a hackathon, and networking with 500+ attendees.' }
             ].map((step, i) => (
               <motion.div 
                 key={i} 
@@ -650,7 +650,7 @@ const Index: React.FC = () => {
                 <h5 className="font-bold text-[10px] uppercase tracking-widest mb-3 text-ebw-gold">Platform</h5>
                 <ul className="space-y-2 text-xs text-white/40">
                   <li onClick={handleLaunch} className="hover:text-white cursor-pointer transition-colors">Register Now</li>
-                  <li className="hover:text-white cursor-pointer transition-colors">How it Works</li>
+                  <li onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-white cursor-pointer transition-colors">How to Attend</li>
                   <li className="hover:text-white cursor-pointer transition-colors">API Docs</li>
                 </ul>
               </div>
