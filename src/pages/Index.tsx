@@ -306,7 +306,7 @@ const Index: React.FC = () => {
       </section>
 
       {/* ════════════ HOW IT WORKS ════════════ */}
-      <section id="how-it-works" className="py-24 sm:py-32 px-6 sm:px-10 lg:px-[72px] relative overflow-hidden bg-ebw-mesh-dark">
+      <section id="how-it-works" className="py-24 sm:py-32 px-6 sm:px-10 lg:px-[72px] relative overflow-hidden bg-ebw-mesh-dark scroll-mt-20">
         <div className="absolute top-1/2 right-0 w-[40%] h-[60%] bg-ebw-gold/5 blur-[120px] rounded-full pointer-events-none animate-float-slow"></div>
         <div className="absolute -left-32 bottom-0 w-64 h-64 bg-ebw-gold/[0.03] rounded-full blur-[100px] pointer-events-none animate-float-medium"></div>
         <div className="max-w-[1200px] mx-auto">
@@ -345,7 +345,7 @@ const Index: React.FC = () => {
       </section>
 
       {/* ════════════ CAPABILITIES ════════════ */}
-      <section id="features" className="py-24 sm:py-32 px-6 sm:px-10 lg:px-[72px] bg-black/40 relative overflow-hidden">
+      <section id="features" className="py-24 sm:py-32 px-6 sm:px-10 lg:px-[72px] bg-black/40 relative overflow-hidden scroll-mt-20">
         <div className="absolute inset-0 bg-ebw-mesh" />
         <div className="max-w-[1200px] mx-auto relative z-10">
           <motion.div 
@@ -522,7 +522,7 @@ const Index: React.FC = () => {
       </section>
 
       {/* ════════════ FAQ ════════════ */}
-      <section id="faq" className="py-24 sm:py-32 px-6 sm:px-10 lg:px-[72px] relative">
+      <section id="faq" className="py-24 sm:py-32 px-6 sm:px-10 lg:px-[72px] relative scroll-mt-20">
         <div className="absolute inset-0 bg-pixel-grid opacity-20 pointer-events-none" />
         <div className="max-w-[1000px] mx-auto relative z-10">
           <div className="mb-12 sm:mb-16 text-center">
