@@ -127,7 +127,7 @@ const Index: React.FC = () => {
               className="font-display font-bold leading-[1.08] tracking-[-0.025em] mb-6" 
               style={{ fontSize: 'clamp(2.2rem, 5vw, 4.8rem)' }}
             >
-              Inclusive Innovation<br/><span className="text-ebw-gold font-mono tracking-wider">for Every Ethiopian</span>
+              Inclusive Innovation<br/><span className="text-ebw-gold font-mono tracking-wider text-lg sm:text-xl">for Every Ethiopian</span>
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
