@@ -466,6 +466,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 
@@ -813,5 +814,6 @@
   }
   .hero {
     padding-top: 56px;
+    min-height: 100dvh;
   }
 }
