@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
           }}
           className="flex items-center gap-3 group"
         >
-          <img src="/logo.png" alt="EBW 2026" className="h-9 w-9 object-cover rounded-full" />
+          <img src="/ebwlogo.png" alt="EBW 2026" className="h-9 w-9 object-cover rounded-full" />
           <span className="text-lg font-bold text-white font-display tracking-wide">
             EBW
           </span>
