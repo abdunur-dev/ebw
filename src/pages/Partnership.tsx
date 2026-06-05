@@ -735,11 +735,11 @@ const Partnership: React.FC = () => {
         <div className="max-w-[1200px] mx-auto relative z-10">
           <div className="flex flex-col md:flex-row justify-between gap-8 mb-8">
             <div className="max-w-[260px]">
-              <div className="flex items-center gap-2 mb-3">
+              <div className="flex items-center gap-2 mb-4 sm:mb-3">
                 <img src="/ebwlogo.png" alt="EBW 2026" className="h-7 w-7 object-cover rounded-full" />
                 <span className="font-display font-bold text-base tracking-[0.05em] uppercase text-white">EBW</span>
               </div>
-              <p className="text-white/40 text-xs leading-relaxed">Ethiopian Blockchain Week 2026. Inclusive innovation for every Ethiopian. July 31 - August 1, Addis Ababa.</p>
+              <p className="text-white/40 text-xs leading-relaxed mb-4 sm:mb-0">Ethiopian Blockchain Week 2026. Inclusive innovation for every Ethiopian. July 31 - August 1, Addis Ababa.</p>
             </div>
             <div className="grid grid-cols-3 gap-8">
               <div>
