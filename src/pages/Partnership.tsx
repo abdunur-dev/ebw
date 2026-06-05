@@ -260,7 +260,7 @@ const Partnership: React.FC = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 + i * 0.08 }}
-                className="feat-card text-left relative overflow-hidden"
+                className="feat-card text-center lg:text-left relative overflow-hidden"
               >
                 <div className="absolute -top-2 -right-2 w-20 h-20 bg-ebw-gold/5 blur-2xl rounded-full" />
                 <div className="relative">
