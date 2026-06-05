@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const navLinks = [
   { label: "Features", href: "#features" },
@@ -12,6 +13,9 @@ const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -21,11 +25,21 @@ const Navbar: React.FC = () => {
 
   const handleNavClick = (href: string) => {
     setMobileOpen(false);
+    if (!isHome) {
+      navigate("/" + href);
+      return;
+    }
     const el = document.querySelector(href);
     if (el) {
       const top = el.getBoundingClientRect().top + window.scrollY - 72;
       window.scrollTo({ top, behavior: "smooth" });
     }
+  };
+
+  const goRegister = () => {
+    setMobileOpen(false);
+    navigate("/register");
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -42,10 +56,11 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto flex items-center justify-between h-16 px-4 lg:px-8">
         {/* Logo */}
         <a
-          href="#"
+          href="/"
           onClick={(e) => {
             e.preventDefault();
-            window.scrollTo({ top: 0, behavior: "smooth" });
+            if (isHome) window.scrollTo({ top: 0, behavior: "smooth" });
+            else navigate("/");
           }}
           className="flex items-center gap-3 group"
         >
@@ -87,7 +102,7 @@ const Navbar: React.FC = () => {
             EBW 2026
           </div>
           <button
-            onClick={() => handleNavClick("#features")}
+            onClick={goRegister}
             className="btn-neon-primary text-sm min-h-[44px] px-6"
           >
             Register Now
@@ -126,7 +141,7 @@ const Navbar: React.FC = () => {
                 </button>
               ))}
               <button
-                onClick={() => { setMobileOpen(false); handleNavClick("#features"); }}
+                onClick={goRegister}
                 className="btn-neon-primary text-sm mt-2 min-h-[44px]"
               >
                 Register Now

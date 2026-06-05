@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 
 const roles = ["Inclusive Innovation.", "Blockchain for Every Ethiopian."];
@@ -81,9 +82,9 @@ const Index: React.FC = () => {
   ];
 
   const handleLaunch = () => {
-    const el = document.getElementById('cta-register');
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
+    navigate('/register');
   };
+  const navigate = useNavigate();
 
   return (
     <div className="bg-[#001B4D] min-h-screen text-white font-body selection:bg-ebw-gold/30">

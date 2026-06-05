@@ -105,6 +105,46 @@
     text-shadow: 0 0 10px hsl(48 100% 48% / 0.6), 0 0 40px hsl(48 100% 48% / 0.3), 0 0 80px hsl(48 100% 48% / 0.1);
   }
 
+  /* Form input */
+  .ebw-input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: white;
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-size: 14px;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    outline: none;
+  }
+  .ebw-input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .ebw-input:hover {
+    border-color: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.04);
+  }
+  .ebw-input:focus {
+    border-color: hsl(48 100% 48% / 0.5);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 0 3px hsl(48 100% 48% / 0.1);
+  }
+  .ebw-input:invalid:not(:placeholder-shown) {
+    border-color: rgba(239, 68, 68, 0.5);
+  }
+  select.ebw-input {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='rgba(255,255,255,0.5)' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 2.5rem;
+  }
+  select.ebw-input option {
+    background: hsl(220 100% 12%);
+    color: white;
+  }
+
   /* Neon border glow */
   .border-glow-gold {
     box-shadow: var(--glow-gold);
