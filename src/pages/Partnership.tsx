@@ -317,16 +317,9 @@ const Partnership: React.FC = () => {
               </div>
 
               <div className="hidden lg:block">
-                <div className="relative aspect-square rounded-2xl overflow-hidden border border-ebw-gold/20 bg-gradient-to-br from-ebw-gold/15 via-ebw-navy to-ebw-navy p-6 flex flex-col justify-between">
+                <div className="relative aspect-square rounded-2xl overflow-hidden border border-ebw-gold/20 bg-gradient-to-br from-ebw-gold/10 via-ebw-navy to-ebw-navy p-8 flex items-center justify-center">
                   <div className="absolute inset-0 bg-pixel-grid-animated opacity-30" />
-                  <div className="relative flex items-start justify-between">
-                    <div className="text-ebw-gold font-display font-black text-4xl leading-none">EBW</div>
-                    <div className="text-ebw-gold font-display font-black text-4xl leading-none">2026</div>
-                  </div>
-                  <div className="relative">
-                    <div className="text-[10px] uppercase tracking-[0.3em] text-white/40 mb-1">Tagline</div>
-                    <div className="font-display font-bold text-xl text-gradient-gold">Inclusive Innovation</div>
-                  </div>
+                  <img src="/ebwlogo.png" alt="EBW 2026" className="relative z-10 w-full h-full object-contain drop-shadow-[0_0_20px_rgba(244,196,0,0.3)]" />
                 </div>
               </div>
             </div>
