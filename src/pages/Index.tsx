@@ -104,7 +104,7 @@ const Index: React.FC = () => {
         <div className="absolute bottom-[15%] right-[28%] w-16 h-16 border border-ebw-gold/10 rotate-[75deg] animate-float-medium" style={{ animationDelay: "2.5s" }} />
 
         {/* Hero Content */}
-          <div className="relative z-10 flex-1 flex flex-col lg:flex-row items-center justify-center px-6 sm:px-10 lg:px-[72px] gap-10 lg:gap-12">
+          <div className="relative z-10 flex-1 flex flex-col lg:flex-row items-center justify-center px-6 sm:px-10 lg:px-[72px] gap-8 lg:gap-12">
           <motion.div 
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -144,7 +144,7 @@ const Index: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="text-white/60 text-base sm:text-lg lg:text-xl mb-12 sm:mb-14 leading-relaxed max-w-[550px]"
+              className="text-white/60 text-base sm:text-lg lg:text-xl mb-10 leading-relaxed max-w-[550px]"
             >
               Join 500+ developers, founders, and innovators at Ethiopia's premier blockchain conference. July 31 - August 1, 2026.
             </motion.p>
@@ -165,7 +165,7 @@ const Index: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.9 }}
-              className="flex items-center gap-6 sm:gap-10 mt-12 sm:mt-16 justify-center lg:justify-start flex-wrap"
+              className="flex items-center gap-4 sm:gap-10 mt-12 sm:mt-16 justify-center lg:justify-start flex-wrap"
             >
               <div>
                 <div className="text-xl sm:text-2xl font-bold font-display">500+</div>
