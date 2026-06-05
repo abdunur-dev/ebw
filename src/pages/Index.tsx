@@ -94,14 +94,14 @@ const Index: React.FC = () => {
       {/* ════════════ HERO ════════════ */}
       <section className="hero">
         <div className="absolute inset-0 bg-pixel-grid-animated opacity-30 pointer-events-none" />
-        <div className="absolute top-20 left-[8%] w-16 h-16 border border-ebw-gold/20 rotate-45 animate-float-slow" />
-        <div className="absolute top-40 right-[12%] w-24 h-24 border border-ebw-gold/15 rotate-12 animate-float-medium" />
-        <div className="absolute bottom-32 left-[18%] w-12 h-12 bg-ebw-gold/10 rotate-45 animate-float-slow" style={{ animationDelay: "2s" }} />
-        <div className="absolute top-1/4 left-[4%] w-20 h-20 border-2 border-ebw-gold/10 rotate-[30deg] animate-float-medium" style={{ animationDelay: "1s" }} />
-        <div className="absolute bottom-1/4 right-[6%] w-14 h-14 bg-ebw-gold/8 rotate-[60deg] animate-float-slow" style={{ animationDelay: "3s" }} />
-        <div className="absolute top-[60%] left-[55%] w-10 h-10 border border-ebw-gold/20 rotate-[20deg] animate-float-medium" style={{ animationDelay: "1.5s" }} />
-        <div className="absolute top-[12%] left-[42%] w-8 h-8 bg-ebw-gold/15 rotate-45 animate-float-slow" style={{ animationDelay: "0.5s" }} />
-        <div className="absolute bottom-[15%] right-[28%] w-16 h-16 border border-ebw-gold/10 rotate-[75deg] animate-float-medium" style={{ animationDelay: "2.5s" }} />
+        <div className="hidden sm:block absolute top-20 left-[8%] w-16 h-16 border border-ebw-gold/20 rotate-45 animate-float-slow" />
+        <div className="hidden sm:block absolute top-40 right-[12%] w-24 h-24 border border-ebw-gold/15 rotate-12 animate-float-medium" />
+        <div className="hidden sm:block absolute bottom-32 left-[18%] w-12 h-12 bg-ebw-gold/10 rotate-45 animate-float-slow" style={{ animationDelay: "2s" }} />
+        <div className="hidden sm:block absolute top-1/4 left-[4%] w-20 h-20 border-2 border-ebw-gold/10 rotate-[30deg] animate-float-medium" style={{ animationDelay: "1s" }} />
+        <div className="hidden sm:block absolute bottom-1/4 right-[6%] w-14 h-14 bg-ebw-gold/8 rotate-[60deg] animate-float-slow" style={{ animationDelay: "3s" }} />
+        <div className="hidden sm:block absolute top-[60%] left-[55%] w-10 h-10 border border-ebw-gold/20 rotate-[20deg] animate-float-medium" style={{ animationDelay: "1.5s" }} />
+        <div className="hidden sm:block absolute top-[12%] left-[42%] w-8 h-8 bg-ebw-gold/15 rotate-45 animate-float-slow" style={{ animationDelay: "0.5s" }} />
+        <div className="hidden sm:block absolute bottom-[15%] right-[28%] w-16 h-16 border border-ebw-gold/10 rotate-[75deg] animate-float-medium" style={{ animationDelay: "2.5s" }} />
 
         {/* Hero Content */}
           <div className="relative z-10 flex-1 flex flex-col lg:flex-row items-center justify-center px-6 sm:px-10 lg:px-[72px] gap-8 lg:gap-12">
@@ -168,15 +168,15 @@ const Index: React.FC = () => {
               className="flex items-center gap-4 sm:gap-10 mt-12 sm:mt-16 justify-center lg:justify-start flex-wrap"
             >
               <div>
-                <div className="text-xl sm:text-2xl font-bold font-display">500+</div>
+                <div className="text-lg sm:text-2xl font-bold font-display">500+</div>
                 <div className="text-white/40 text-[10px] sm:text-xs uppercase tracking-widest mt-1">Attendees</div>
               </div>
               <div>
-                <div className="text-xl sm:text-2xl font-bold font-display">30+</div>
+                <div className="text-lg sm:text-2xl font-bold font-display">30+</div>
                 <div className="text-white/40 text-[10px] sm:text-xs uppercase tracking-widest mt-1">Speakers</div>
               </div>
               <div>
-                <div className="text-xl sm:text-2xl font-bold font-display text-ebw-gold">2</div>
+                <div className="text-lg sm:text-2xl font-bold font-display text-ebw-gold">2</div>
                 <div className="text-white/40 text-[10px] sm:text-xs uppercase tracking-widest mt-1">Days</div>
               </div>
             </motion.div>
@@ -308,7 +308,7 @@ const Index: React.FC = () => {
       </section>
 
       {/* ════════════ HOW IT WORKS ════════════ */}
-      <section id="how-it-works" className="py-24 sm:py-32 px-6 sm:px-10 lg:px-[72px] relative overflow-hidden bg-ebw-mesh-dark scroll-mt-20">
+      <section id="how-it-works" className="py-20 sm:py-32 px-6 sm:px-10 lg:px-[72px] relative overflow-hidden bg-ebw-mesh-dark scroll-mt-20">
         <div className="absolute inset-0 bg-pixel-grid-animated opacity-20 pointer-events-none" />
         <div className="absolute top-1/2 right-0 w-[40%] h-[60%] bg-ebw-gold/5 blur-[120px] rounded-full pointer-events-none animate-float-slow"></div>
         <div className="absolute -left-32 bottom-0 w-64 h-64 bg-ebw-gold/[0.03] rounded-full blur-[100px] pointer-events-none animate-float-medium"></div>
@@ -355,7 +355,7 @@ const Index: React.FC = () => {
       </section>
 
       {/* ════════════ CAPABILITIES ════════════ */}
-      <section id="features" className="py-24 sm:py-32 px-6 sm:px-10 lg:px-[72px] bg-black/40 relative overflow-hidden scroll-mt-20">
+      <section id="features" className="py-20 sm:py-32 px-6 sm:px-10 lg:px-[72px] bg-black/40 relative overflow-hidden scroll-mt-20">
         <div className="absolute inset-0 bg-pixel-grid-animated opacity-20 pointer-events-none" />
         <div className="absolute inset-0 bg-ebw-mesh" />
         <div className="max-w-[1200px] mx-auto relative z-10">
@@ -403,7 +403,7 @@ const Index: React.FC = () => {
       </section>
 
       {/* ════════════ COMPARISON ════════════ */}
-      <section className="py-24 sm:py-32 px-6 sm:px-10 lg:px-[72px] relative overflow-hidden">
+      <section className="py-20 sm:py-32 px-6 sm:px-10 lg:px-[72px] relative overflow-hidden">
         <div className="absolute inset-0 bg-ebw-mesh-dark" />
         <div className="max-w-[1000px] mx-auto relative z-10">
           <motion.div 
@@ -462,7 +462,7 @@ const Index: React.FC = () => {
       </section>
 
       {/* ════════════ ROADMAP ════════════ */}
-      <section className="py-24 sm:py-32 px-6 sm:px-10 lg:px-[72px] bg-black/20 relative overflow-hidden">
+      <section className="py-20 sm:py-32 px-6 sm:px-10 lg:px-[72px] bg-black/20 relative overflow-hidden">
         <div className="absolute inset-0 bg-ebw-mesh" />
         <div className="max-w-[1000px] mx-auto relative z-10">
           <motion.div 
@@ -536,7 +536,7 @@ const Index: React.FC = () => {
       </section>
 
       {/* ════════════ FAQ ════════════ */}
-      <section id="faq" className="py-24 sm:py-32 px-6 sm:px-10 lg:px-[72px] relative scroll-mt-20">
+      <section id="faq" className="py-20 sm:py-32 px-6 sm:px-10 lg:px-[72px] relative scroll-mt-20">
         <div className="absolute inset-0 bg-pixel-grid opacity-20 pointer-events-none" />
         <div className="max-w-[1000px] mx-auto relative z-10">
           <div className="mb-12 sm:mb-16 text-center">

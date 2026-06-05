@@ -228,8 +228,8 @@ const Partnership: React.FC = () => {
       <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-20 px-6 sm:px-10 lg:px-[72px] overflow-hidden">
         <div className="absolute inset-0 bg-pixel-grid-animated opacity-25 pointer-events-none" />
         <div className="absolute inset-0 bg-ebw-mesh" />
-        <div className="absolute top-32 right-[8%] w-24 h-24 border border-ebw-gold/20 rotate-45 animate-float-slow" />
-        <div className="absolute bottom-20 left-[10%] w-16 h-16 border border-ebw-gold/15 rotate-12 animate-float-medium" />
+        <div className="hidden sm:block absolute top-32 right-[8%] w-24 h-24 border border-ebw-gold/20 rotate-45 animate-float-slow" />
+        <div className="hidden sm:block absolute bottom-20 left-[10%] w-16 h-16 border border-ebw-gold/15 rotate-12 animate-float-medium" />
 
         <div className="max-w-[1100px] mx-auto relative z-10">
           <motion.div
@@ -264,7 +264,7 @@ const Partnership: React.FC = () => {
               >
                 <div className="absolute -top-2 -right-2 w-20 h-20 bg-ebw-gold/5 blur-2xl rounded-full" />
                 <div className="relative">
-                  <div className="font-display font-black text-3xl sm:text-4xl text-gradient-gold mb-2">{s.value}</div>
+                  <div className="font-display font-black text-2xl sm:text-4xl text-gradient-gold mb-2">{s.value}</div>
                   <div className="text-sm font-semibold mb-1">{s.label}</div>
                   <div className="text-white/40 text-xs leading-relaxed">{s.sub}</div>
                 </div>

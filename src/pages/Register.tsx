@@ -144,9 +144,9 @@ const Register: React.FC = () => {
       <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-20 px-6 sm:px-10 lg:px-[72px] overflow-hidden">
         <div className="absolute inset-0 bg-pixel-grid-animated opacity-25 pointer-events-none" />
         <div className="absolute inset-0 bg-ebw-mesh" />
-        <div className="absolute top-32 right-[10%] w-24 h-24 border border-ebw-gold/20 rotate-45 animate-float-slow" />
-        <div className="absolute bottom-20 left-[8%] w-16 h-16 border border-ebw-gold/15 rotate-12 animate-float-medium" />
-        <div className="absolute top-1/3 left-[15%] w-10 h-10 bg-ebw-gold/10 rotate-[20deg] animate-float-slow" style={{ animationDelay: '1s' }} />
+        <div className="hidden sm:block absolute top-32 right-[10%] w-24 h-24 border border-ebw-gold/20 rotate-45 animate-float-slow" />
+        <div className="hidden sm:block absolute bottom-20 left-[8%] w-16 h-16 border border-ebw-gold/15 rotate-12 animate-float-medium" />
+        <div className="hidden sm:block absolute top-1/3 left-[15%] w-10 h-10 bg-ebw-gold/10 rotate-[20deg] animate-float-slow" style={{ animationDelay: '1s' }} />
 
         <div className="max-w-[1100px] mx-auto relative z-10">
           <motion.div
@@ -169,7 +169,7 @@ const Register: React.FC = () => {
               July 31 – August 1, 2026 · Science Museum, Addis Ababa. Pre-register to lock in early-bird pricing
               and be the first to know about speakers, workshops, and the hackathon lineup.
             </p>
-            <div className="flex items-center justify-center gap-5 mt-8 text-[11px] uppercase tracking-widest text-white/30 flex-wrap">
+            <div className="flex items-center justify-center gap-5 mt-8 text-[10px] sm:text-[11px] uppercase tracking-widest text-white/30 flex-wrap">
               <span className="flex items-center gap-2"><Calendar size={13} className="text-ebw-gold" /> July 31 – Aug 1</span>
               <span className="w-1 h-1 rounded-full bg-white/20" />
               <span className="flex items-center gap-2"><MapPin size={13} className="text-ebw-gold" /> Addis Ababa, ET</span>
