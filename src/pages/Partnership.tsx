@@ -168,8 +168,8 @@ const ethiopiaStats = [
 const chains = ['Ethereum', 'Solana', 'Polygon', 'Arbitrum', 'Base', 'Celo', 'Lisk', 'Cardano', 'Avalanche', 'Other / Multi-chain'];
 const products = ['DeFi Protocol', 'NFT / Gaming', 'Infrastructure', 'Exchange', 'Wallet', 'Identity / KYC', 'Agri-Tech', 'Enterprise Solution', 'Other'];
 
-const SectionLabel: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <div className="text-ebw-gold font-display font-bold text-sm tracking-widest uppercase mb-3">
+const SectionLabel: React.FC<{ children: React.ReactNode; center?: boolean }> = ({ children, center }) => (
+  <div className={`text-ebw-gold font-display font-bold text-sm tracking-widest uppercase mb-3 ${center ? 'text-center' : ''}`}>
     {`> ${children}`}
   </div>
 );
@@ -178,7 +178,7 @@ const SectionTitle: React.FC<{ children: React.ReactNode; sub?: string; center?:
   <div className={`mb-12 ${center ? 'text-center' : ''}`}>
     <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl mb-4">{children}</h2>
     <div className={`w-16 h-0.5 bg-ebw-gold/40 ${center ? 'mx-auto' : ''} mb-5`} />
-    {sub && <p className="text-white/50 text-base sm:text-lg max-w-2xl leading-relaxed">{sub}</p>}
+    {sub && <p className={`text-white/50 text-base sm:text-lg max-w-2xl leading-relaxed ${center ? 'mx-auto' : ''}`}>{sub}</p>}
   </div>
 );
 
