@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const navLinks = [
+  { label: "Partnership", href: "/partnership" },
   { label: "Features", href: "#features" },
   { label: "How to Attend", href: "#how-it-works" },
   { label: "FAQ", href: "#faq" },
@@ -25,6 +26,11 @@ const Navbar: React.FC = () => {
 
   const handleNavClick = (href: string) => {
     setMobileOpen(false);
+    if (href.startsWith("/")) {
+      navigate(href);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
     if (!isHome) {
       navigate("/" + href);
       return;
